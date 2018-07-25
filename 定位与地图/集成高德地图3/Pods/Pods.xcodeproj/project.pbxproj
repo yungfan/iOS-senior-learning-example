@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B70AD1552235C92AADF626DFCB3BEEF /* Pods-集成高德地图-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE95B67F4AB4CA92FF8298206F48890 /* Pods-集成高德地图-dummy.m */; };
+		47C1C091E12494118B1FC410EA7196D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0800B2CADCBF6BCA26AB288EE9D70D1C /* AMapLocationKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationKit.h; path = AMapLocationKit.framework/Headers/AMapLocationKit.h; sourceTree = "<group>"; };
+		0DC1639A23E5664705791435531037F7 /* MAUserLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAUserLocation.h; path = MAMapKit.framework/Headers/MAUserLocation.h; sourceTree = "<group>"; };
+		18A977B41343E1B55222C3E055AC39E0 /* MAMapKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMapKit.h; path = MAMapKit.framework/Headers/MAMapKit.h; sourceTree = "<group>"; };
+		18C7BE093A5FC92E6195A4E757310234 /* MAGroundOverlayRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGroundOverlayRenderer.h; path = MAMapKit.framework/Headers/MAGroundOverlayRenderer.h; sourceTree = "<group>"; };
+		1DC48F7227D677E17B8F100C64AAADE4 /* AMapLocationVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationVersion.h; path = AMapLocationKit.framework/Headers/AMapLocationVersion.h; sourceTree = "<group>"; };
+		2281676DB0DEA68B669F643293EBABDF /* MAMultiPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMultiPoint.h; path = MAMapKit.framework/Headers/MAMultiPoint.h; sourceTree = "<group>"; };
+		31881774294DB211B84A66A3C12B7654 /* AMapSearchKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchKit.h; path = AMapSearchKit.framework/Headers/AMapSearchKit.h; sourceTree = "<group>"; };
+		3EFED1B0F6BE6B550D65E5CCB3F32A81 /* MACircleView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MACircleView.h; path = MAMapKit.framework/Headers/MACircleView.h; sourceTree = "<group>"; };
+		3F63EF0DD580A8A49F2FFFB0F9B8012E /* MAGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGeometry.h; path = MAMapKit.framework/Headers/MAGeometry.h; sourceTree = "<group>"; };
+		40954276F859BD7EDACAFE804B076933 /* MAOverlayRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOverlayRenderer.h; path = MAMapKit.framework/Headers/MAOverlayRenderer.h; sourceTree = "<group>"; };
+		4260FF2CC8B671B1EDAC959293757D07 /* MAPolylineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolylineRenderer.h; path = MAMapKit.framework/Headers/MAPolylineRenderer.h; sourceTree = "<group>"; };
+		4345AA19DBC3F1D2051B6F7E0F17C00A /* AMapSearchVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchVersion.h; path = AMapSearchKit.framework/Headers/AMapSearchVersion.h; sourceTree = "<group>"; };
+		438C2E048CE0F21B7178E24A663C5B7C /* AMap.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
+		452923EAA532C79F4812C1C13A109617 /* MAOverlayPathRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOverlayPathRenderer.h; path = MAMapKit.framework/Headers/MAOverlayPathRenderer.h; sourceTree = "<group>"; };
+		5D8CB8AA8511D2E5587768709EB751C7 /* MACircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MACircle.h; path = MAMapKit.framework/Headers/MACircle.h; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6CC1ACBA1D64D8BD149615A724AC4BE3 /* MATileOverlayRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MATileOverlayRenderer.h; path = MAMapKit.framework/Headers/MATileOverlayRenderer.h; sourceTree = "<group>"; };
+		6FDEB0694491DDF58770F3CB44D5817D /* MAGroundOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGroundOverlay.h; path = MAMapKit.framework/Headers/MAGroundOverlay.h; sourceTree = "<group>"; };
+		72D551125112663166CD2AF47A0AA937 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		738775A37EA93B5C5DAD30CB409DCD43 /* MAPointAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPointAnnotation.h; path = MAMapKit.framework/Headers/MAPointAnnotation.h; sourceTree = "<group>"; };
+		75C4135009B7E2DE3E645566FB16FA06 /* AMapSearchAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchAPI.h; path = AMapSearchKit.framework/Headers/AMapSearchAPI.h; sourceTree = "<group>"; };
+		78E890BAEE754A2131F9A789FF232058 /* Pods-集成高德地图.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-集成高德地图.release.xcconfig"; sourceTree = "<group>"; };
+		7DD436DCE56684B9972C7945CC8CE918 /* MAPolygonRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolygonRenderer.h; path = MAMapKit.framework/Headers/MAPolygonRenderer.h; sourceTree = "<group>"; };
+		7F8C714D7630D8EA13EE8C7CA3E5B77E /* MAMultiColoredPolylineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMultiColoredPolylineRenderer.h; path = MAMapKit.framework/Headers/MAMultiColoredPolylineRenderer.h; sourceTree = "<group>"; };
+		8122D8D19A8D567336E3C12731A81A04 /* AMapNearbyUploadInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNearbyUploadInfo.h; path = AMapSearchKit.framework/Headers/AMapNearbyUploadInfo.h; sourceTree = "<group>"; };
+		81D9C68F632668F21B302EA7DEB47382 /* Pods-集成高德地图-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-集成高德地图-frameworks.sh"; sourceTree = "<group>"; };
+		82723AE36C951AADE7E722E10AF225AB /* AMapNearbySearchManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNearbySearchManager.h; path = AMapSearchKit.framework/Headers/AMapNearbySearchManager.h; sourceTree = "<group>"; };
+		83820BB4B188C5AD7E34CF03B62B02C6 /* Pods-集成高德地图-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-集成高德地图-acknowledgements.plist"; sourceTree = "<group>"; };
+		87FA77D25E0E351396850E3E75724CE7 /* MAMultiPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMultiPolyline.h; path = MAMapKit.framework/Headers/MAMultiPolyline.h; sourceTree = "<group>"; };
+		895700AEFD722878FC29F948AE62B473 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
+		8C881796F1C34C753C3E91673B45580B /* libPods-集成高德地图.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-集成高德地图.a"; path = "libPods-集成高德地图.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DDBBD597F8D1836E43AD9682E7C2C1D /* MATileOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MATileOverlayView.h; path = MAMapKit.framework/Headers/MATileOverlayView.h; sourceTree = "<group>"; };
+		91A4F02ED801012485EA586FB92B4BE6 /* AMapSearchError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchError.h; path = AMapSearchKit.framework/Headers/AMapSearchError.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94BA3ACF1D2D47A169A0F8D377FF2365 /* AMapFoundationVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapFoundationVersion.h; path = AMapFoundationKit.framework/Headers/AMapFoundationVersion.h; sourceTree = "<group>"; };
+		957863C24205CFE964CFFD4D16CADEBC /* Pods-集成高德地图.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-集成高德地图.debug.xcconfig"; sourceTree = "<group>"; };
+		9813CF5FF6C79D17A9DFA64A2FEBEAA3 /* MAOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOverlay.h; path = MAMapKit.framework/Headers/MAOverlay.h; sourceTree = "<group>"; };
+		9B8CEE5E85FFB13118392B161FE1BA94 /* AMapLocationRegionObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationRegionObj.h; path = AMapLocationKit.framework/Headers/AMapLocationRegionObj.h; sourceTree = "<group>"; };
+		9E345E5276127ADE6D9B98DED8153129 /* MAMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMapView.h; path = MAMapKit.framework/Headers/MAMapView.h; sourceTree = "<group>"; };
+		9F9EEBCD890E34A8AD8EB2B2F9D016A4 /* MAHeatMapTileOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAHeatMapTileOverlay.h; path = MAMapKit.framework/Headers/MAHeatMapTileOverlay.h; sourceTree = "<group>"; };
+		9FD994CD81221AC347F506FFA41023AC /* Pods-集成高德地图-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-集成高德地图-resources.sh"; sourceTree = "<group>"; };
+		A07EB5DD06092ED47CA99CF943FCA3EE /* AMapFoundationKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapFoundationKit.h; path = AMapFoundationKit.framework/Headers/AMapFoundationKit.h; sourceTree = "<group>"; };
+		A0EE2749FA958BBBEFEAD9841D9E80B9 /* AMapSearchObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchObj.h; path = AMapSearchKit.framework/Headers/AMapSearchObj.h; sourceTree = "<group>"; };
+		A3344AD460CB428CDBD2C66062DC586C /* AMapLocationCommonObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationCommonObj.h; path = AMapLocationKit.framework/Headers/AMapLocationCommonObj.h; sourceTree = "<group>"; };
+		A478E3E59AE0A9CF952B2D11671D4A5B /* MAPolygonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolygonView.h; path = MAMapKit.framework/Headers/MAPolygonView.h; sourceTree = "<group>"; };
+		A7CF181CAFFBCED8F87875AF631ACDA0 /* MATileOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MATileOverlay.h; path = MAMapKit.framework/Headers/MATileOverlay.h; sourceTree = "<group>"; };
+		A9E9E932DB2BD548F1A1C9AFC1FE9CB1 /* AMapURLSearchConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapURLSearchConfig.h; path = AMapFoundationKit.framework/Headers/AMapURLSearchConfig.h; sourceTree = "<group>"; };
+		AAB299E0D8CEC76231AD1A91A60363FF /* Pods-集成高德地图-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-集成高德地图-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB2516454BD3D7C144CF12FDCF14B29C /* MAGeodesicPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGeodesicPolyline.h; path = MAMapKit.framework/Headers/MAGeodesicPolyline.h; sourceTree = "<group>"; };
+		AF20E46C6FA57E1200FAA1E875F9FAC5 /* MAOverlayPathView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOverlayPathView.h; path = MAMapKit.framework/Headers/MAOverlayPathView.h; sourceTree = "<group>"; };
+		B3F8E5186CA376F1DF2809AD963D8357 /* MAShape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAShape.h; path = MAMapKit.framework/Headers/MAShape.h; sourceTree = "<group>"; };
+		BC4BF9D9943AE4A20C6CABAE0DDF1A14 /* AMapURLSearchType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapURLSearchType.h; path = AMapFoundationKit.framework/Headers/AMapURLSearchType.h; sourceTree = "<group>"; };
+		C2B2881531E20E48BA373DC982162D0E /* MAAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAAnnotation.h; path = MAMapKit.framework/Headers/MAAnnotation.h; sourceTree = "<group>"; };
+		C3633E700D2E70496D652B84AEB642C8 /* AMapCommonObj.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapCommonObj.h; path = AMapSearchKit.framework/Headers/AMapCommonObj.h; sourceTree = "<group>"; };
+		CB2D4A375D54DCB39E5D86FA8CB85BEC /* AMapURLSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapURLSearch.h; path = AMapFoundationKit.framework/Headers/AMapURLSearch.h; sourceTree = "<group>"; };
+		CB9E011D0E6268F32BBDC02F7BA51B8E /* MAPolylineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolylineView.h; path = MAMapKit.framework/Headers/MAPolylineView.h; sourceTree = "<group>"; };
+		CDFA1950090DD278A156582DBB344CE4 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		CFE1AD7461EBDE65072D2F4CB91D6E98 /* AMapServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapServices.h; path = AMapFoundationKit.framework/Headers/AMapServices.h; sourceTree = "<group>"; };
+		D0A80061A7EF00C6B9F59E103B95B786 /* MAAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAAnnotationView.h; path = MAMapKit.framework/Headers/MAAnnotationView.h; sourceTree = "<group>"; };
+		D328B365F861D5B8143A6D3E222F2F31 /* MACircleRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MACircleRenderer.h; path = MAMapKit.framework/Headers/MACircleRenderer.h; sourceTree = "<group>"; };
+		D6CF2921F9EEAD23D84C72737CAC6B7E /* MAPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolygon.h; path = MAMapKit.framework/Headers/MAPolygon.h; sourceTree = "<group>"; };
+		D8F0E6109308D0DA229782BC2528D11C /* MAPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolyline.h; path = MAMapKit.framework/Headers/MAPolyline.h; sourceTree = "<group>"; };
+		DDB541B4D8BF8F5F3EBB2F8357B8E449 /* AMapLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapLocationManager.h; path = AMapLocationKit.framework/Headers/AMapLocationManager.h; sourceTree = "<group>"; };
+		DEDEA70BC793A75293A4732BAE4B44AB /* AMapUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapUtility.h; path = AMapFoundationKit.framework/Headers/AMapUtility.h; sourceTree = "<group>"; };
+		E5131672E7F821A05A0A650FDE5DDC5C /* MAUserLocationRepresentation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAUserLocationRepresentation.h; path = MAMapKit.framework/Headers/MAUserLocationRepresentation.h; sourceTree = "<group>"; };
+		EA04789687CBAE308A804470FAF54E46 /* MAMapVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMapVersion.h; path = MAMapKit.framework/Headers/MAMapVersion.h; sourceTree = "<group>"; };
+		EA7C9DFECDBFFAD731971D9B0628E85F /* MAPinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPinAnnotationView.h; path = MAMapKit.framework/Headers/MAPinAnnotationView.h; sourceTree = "<group>"; };
+		ED598AC62480007A08A6D71EE2FAB6B4 /* MAGroundOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGroundOverlayView.h; path = MAMapKit.framework/Headers/MAGroundOverlayView.h; sourceTree = "<group>"; };
+		EFE95B67F4AB4CA92FF8298206F48890 /* Pods-集成高德地图-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-集成高德地图-dummy.m"; sourceTree = "<group>"; };
+		F2AB574584A9C7A160FA82FE56EB6CEB /* MAOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAOverlayView.h; path = MAMapKit.framework/Headers/MAOverlayView.h; sourceTree = "<group>"; };
+		F785695B8180871C92B4F5F1486B84D8 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B820B75CF23504EA72A1AD80DBE2EF3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47C1C091E12494118B1FC410EA7196D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		177B3AFFA57FF3DDF045133D36E8CFB2 /* AMapFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A07EB5DD06092ED47CA99CF943FCA3EE /* AMapFoundationKit.h */,
+				94BA3ACF1D2D47A169A0F8D377FF2365 /* AMapFoundationVersion.h */,
+				CFE1AD7461EBDE65072D2F4CB91D6E98 /* AMapServices.h */,
+				CB2D4A375D54DCB39E5D86FA8CB85BEC /* AMapURLSearch.h */,
+				A9E9E932DB2BD548F1A1C9AFC1FE9CB1 /* AMapURLSearchConfig.h */,
+				BC4BF9D9943AE4A20C6CABAE0DDF1A14 /* AMapURLSearchType.h */,
+				DEDEA70BC793A75293A4732BAE4B44AB /* AMapUtility.h */,
+				208BDB46D53DA1B39B4FC5BFA5A47E3C /* Frameworks */,
+			);
+			name = AMapFoundation;
+			path = AMapFoundation;
+			sourceTree = "<group>";
+		};
+		1D50FF9AD0911D0C1E17F0D4B55A89C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72D551125112663166CD2AF47A0AA937 /* MAMapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		208BDB46D53DA1B39B4FC5BFA5A47E3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F785695B8180871C92B4F5F1486B84D8 /* AMapFoundationKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		442EFB80F5299B36D9D3C6DF9F0D2EB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C881796F1C34C753C3E91673B45580B /* libPods-集成高德地图.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5824420285C338FDE5F0F816AE9061A5 /* AMapLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A3344AD460CB428CDBD2C66062DC586C /* AMapLocationCommonObj.h */,
+				0800B2CADCBF6BCA26AB288EE9D70D1C /* AMapLocationKit.h */,
+				DDB541B4D8BF8F5F3EBB2F8357B8E449 /* AMapLocationManager.h */,
+				9B8CEE5E85FFB13118392B161FE1BA94 /* AMapLocationRegionObj.h */,
+				1DC48F7227D677E17B8F100C64AAADE4 /* AMapLocationVersion.h */,
+				FE70C7BDA5CBCADA77FAA300D43DF1AC /* Frameworks */,
+			);
+			name = AMapLocation;
+			path = AMapLocation;
+			sourceTree = "<group>";
+		};
+		58B0246039D1F9952ABA4363F35BBAEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB2DB80418AB7652E00D4E4D4EDD3E23 /* AMap2DMap */,
+				177B3AFFA57FF3DDF045133D36E8CFB2 /* AMapFoundation */,
+				5824420285C338FDE5F0F816AE9061A5 /* AMapLocation */,
+				747B49CA4DF8910D5451A1C93B2C6004 /* AMapSearch */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DBBB833A2815D277720884F7B2141CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDFA1950090DD278A156582DBB344CE4 /* AMapSearchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		747B49CA4DF8910D5451A1C93B2C6004 /* AMapSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C3633E700D2E70496D652B84AEB642C8 /* AMapCommonObj.h */,
+				82723AE36C951AADE7E722E10AF225AB /* AMapNearbySearchManager.h */,
+				8122D8D19A8D567336E3C12731A81A04 /* AMapNearbyUploadInfo.h */,
+				75C4135009B7E2DE3E645566FB16FA06 /* AMapSearchAPI.h */,
+				91A4F02ED801012485EA586FB92B4BE6 /* AMapSearchError.h */,
+				31881774294DB211B84A66A3C12B7654 /* AMapSearchKit.h */,
+				A0EE2749FA958BBBEFEAD9841D9E80B9 /* AMapSearchObj.h */,
+				4345AA19DBC3F1D2051B6F7E0F17C00A /* AMapSearchVersion.h */,
+				6DBBB833A2815D277720884F7B2141CD /* Frameworks */,
+			);
+			name = AMapSearch;
+			path = AMapSearch;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				58B0246039D1F9952ABA4363F35BBAEA /* Pods */,
+				442EFB80F5299B36D9D3C6DF9F0D2EB7 /* Products */,
+				7F2C99E7BA83C8AEB5B502F9418D0D90 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F2C99E7BA83C8AEB5B502F9418D0D90 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1BB9F6E6FF62C3E43108E579B8136B8 /* Pods-集成高德地图 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		90B4ABD7AB444A177D6EA2D060DB5531 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				438C2E048CE0F21B7178E24A663C5B7C /* AMap.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BB2DB80418AB7652E00D4E4D4EDD3E23 /* AMap2DMap */ = {
+			isa = PBXGroup;
+			children = (
+				C2B2881531E20E48BA373DC982162D0E /* MAAnnotation.h */,
+				D0A80061A7EF00C6B9F59E103B95B786 /* MAAnnotationView.h */,
+				5D8CB8AA8511D2E5587768709EB751C7 /* MACircle.h */,
+				D328B365F861D5B8143A6D3E222F2F31 /* MACircleRenderer.h */,
+				3EFED1B0F6BE6B550D65E5CCB3F32A81 /* MACircleView.h */,
+				AB2516454BD3D7C144CF12FDCF14B29C /* MAGeodesicPolyline.h */,
+				3F63EF0DD580A8A49F2FFFB0F9B8012E /* MAGeometry.h */,
+				6FDEB0694491DDF58770F3CB44D5817D /* MAGroundOverlay.h */,
+				18C7BE093A5FC92E6195A4E757310234 /* MAGroundOverlayRenderer.h */,
+				ED598AC62480007A08A6D71EE2FAB6B4 /* MAGroundOverlayView.h */,
+				9F9EEBCD890E34A8AD8EB2B2F9D016A4 /* MAHeatMapTileOverlay.h */,
+				18A977B41343E1B55222C3E055AC39E0 /* MAMapKit.h */,
+				EA04789687CBAE308A804470FAF54E46 /* MAMapVersion.h */,
+				9E345E5276127ADE6D9B98DED8153129 /* MAMapView.h */,
+				7F8C714D7630D8EA13EE8C7CA3E5B77E /* MAMultiColoredPolylineRenderer.h */,
+				2281676DB0DEA68B669F643293EBABDF /* MAMultiPoint.h */,
+				87FA77D25E0E351396850E3E75724CE7 /* MAMultiPolyline.h */,
+				9813CF5FF6C79D17A9DFA64A2FEBEAA3 /* MAOverlay.h */,
+				452923EAA532C79F4812C1C13A109617 /* MAOverlayPathRenderer.h */,
+				AF20E46C6FA57E1200FAA1E875F9FAC5 /* MAOverlayPathView.h */,
+				40954276F859BD7EDACAFE804B076933 /* MAOverlayRenderer.h */,
+				F2AB574584A9C7A160FA82FE56EB6CEB /* MAOverlayView.h */,
+				EA7C9DFECDBFFAD731971D9B0628E85F /* MAPinAnnotationView.h */,
+				738775A37EA93B5C5DAD30CB409DCD43 /* MAPointAnnotation.h */,
+				D6CF2921F9EEAD23D84C72737CAC6B7E /* MAPolygon.h */,
+				7DD436DCE56684B9972C7945CC8CE918 /* MAPolygonRenderer.h */,
+				A478E3E59AE0A9CF952B2D11671D4A5B /* MAPolygonView.h */,
+				D8F0E6109308D0DA229782BC2528D11C /* MAPolyline.h */,
+				4260FF2CC8B671B1EDAC959293757D07 /* MAPolylineRenderer.h */,
+				CB9E011D0E6268F32BBDC02F7BA51B8E /* MAPolylineView.h */,
+				B3F8E5186CA376F1DF2809AD963D8357 /* MAShape.h */,
+				A7CF181CAFFBCED8F87875AF631ACDA0 /* MATileOverlay.h */,
+				6CC1ACBA1D64D8BD149615A724AC4BE3 /* MATileOverlayRenderer.h */,
+				8DDBBD597F8D1836E43AD9682E7C2C1D /* MATileOverlayView.h */,
+				0DC1639A23E5664705791435531037F7 /* MAUserLocation.h */,
+				E5131672E7F821A05A0A650FDE5DDC5C /* MAUserLocationRepresentation.h */,
+				1D50FF9AD0911D0C1E17F0D4B55A89C6 /* Frameworks */,
+				90B4ABD7AB444A177D6EA2D060DB5531 /* Resources */,
+			);
+			name = AMap2DMap;
+			path = AMap2DMap;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E1BB9F6E6FF62C3E43108E579B8136B8 /* Pods-集成高德地图 */ = {
+			isa = PBXGroup;
+			children = (
+				AAB299E0D8CEC76231AD1A91A60363FF /* Pods-集成高德地图-acknowledgements.markdown */,
+				83820BB4B188C5AD7E34CF03B62B02C6 /* Pods-集成高德地图-acknowledgements.plist */,
+				EFE95B67F4AB4CA92FF8298206F48890 /* Pods-集成高德地图-dummy.m */,
+				81D9C68F632668F21B302EA7DEB47382 /* Pods-集成高德地图-frameworks.sh */,
+				9FD994CD81221AC347F506FFA41023AC /* Pods-集成高德地图-resources.sh */,
+				957863C24205CFE964CFFD4D16CADEBC /* Pods-集成高德地图.debug.xcconfig */,
+				78E890BAEE754A2131F9A789FF232058 /* Pods-集成高德地图.release.xcconfig */,
+			);
+			name = "Pods-集成高德地图";
+			path = "Target Support Files/Pods-集成高德地图";
+			sourceTree = "<group>";
+		};
+		FE70C7BDA5CBCADA77FAA300D43DF1AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				895700AEFD722878FC29F948AE62B473 /* AMapLocationKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CF77209160BC039B98ABB2FDD763F62 /* Pods-集成高德地图 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176424D0CF247B6A95E7CD7B63F0E1B8 /* Build configuration list for PBXNativeTarget "Pods-集成高德地图" */;
+			buildPhases = (
+				CB32C739FA7290904B99416427D71723 /* Sources */,
+				B820B75CF23504EA72A1AD80DBE2EF3E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-集成高德地图";
+			productName = "Pods-集成高德地图";
+			productReference = 8C881796F1C34C753C3E91673B45580B /* libPods-集成高德地图.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 442EFB80F5299B36D9D3C6DF9F0D2EB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CF77209160BC039B98ABB2FDD763F62 /* Pods-集成高德地图 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB32C739FA7290904B99416427D71723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B70AD1552235C92AADF626DFCB3BEEF /* Pods-集成高德地图-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		86E6A534A8D6AC3582B5C1940DBA2ABD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E890BAEE754A2131F9A789FF232058 /* Pods-集成高德地图.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8C3AB6160718CF2E0F32C9BA036601FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957863C24205CFE964CFFD4D16CADEBC /* Pods-集成高德地图.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		176424D0CF247B6A95E7CD7B63F0E1B8 /* Build configuration list for PBXNativeTarget "Pods-集成高德地图" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3AB6160718CF2E0F32C9BA036601FF /* Debug */,
+				86E6A534A8D6AC3582B5C1940DBA2ABD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

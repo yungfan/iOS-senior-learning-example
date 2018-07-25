@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe4-D8-p0w">
+                                <rect key="frame" x="164" y="268.5" width="46" height="30"/>
+                                <state key="normal" title="打电话"/>
+                                <connections>
+                                    <action selector="phone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWV-In-Jeh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uea-pN-6yV">
+                                <rect key="frame" x="164" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="发短信"/>
+                                <connections>
+                                    <action selector="message:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkc-D5-PlL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwE-B4-aDC">
+                                <rect key="frame" x="164" y="368.5" width="46" height="30"/>
+                                <state key="normal" title="发邮件"/>
+                                <connections>
+                                    <action selector="email:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ren-E0-KSv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sop-jE-ggs">
+                                <rect key="frame" x="160" y="418.5" width="54" height="30"/>
+                                <state key="normal" title="打开pdf"/>
+                                <connections>
+                                    <action selector="pdf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ix9-pk-Csv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uea-pN-6yV" firstAttribute="top" secondItem="qe4-D8-p0w" secondAttribute="bottom" constant="20" id="Mtl-qq-BqI"/>
+                            <constraint firstItem="Uea-pN-6yV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OZf-N7-JGg"/>
+                            <constraint firstItem="Sop-jE-ggs" firstAttribute="top" secondItem="qwE-B4-aDC" secondAttribute="bottom" constant="20" id="XCu-9f-SaZ"/>
+                            <constraint firstItem="Uea-pN-6yV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zv1-gi-mRS"/>
+                            <constraint firstItem="qe4-D8-p0w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bOc-Pj-axF"/>
+                            <constraint firstItem="qwE-B4-aDC" firstAttribute="top" secondItem="Uea-pN-6yV" secondAttribute="bottom" constant="20" id="c7L-Y9-oId"/>
+                            <constraint firstItem="qwE-B4-aDC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iXo-7V-8pe"/>
+                            <constraint firstItem="Sop-jE-ggs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v1n-mZ-lgf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="471" y="32"/>
+        </scene>
+    </scenes>
+</document>

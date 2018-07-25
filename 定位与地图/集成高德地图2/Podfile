@@ -1,0 +1,5 @@
+
+platform :ios, '9.0' #手机的系统
+target '集成高德地图' do #工程名字
+     pod 'AMapLocation'  #3D地图 SDK
+end

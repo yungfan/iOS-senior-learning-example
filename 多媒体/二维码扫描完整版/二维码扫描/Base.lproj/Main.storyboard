@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLO-LW-5N7">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scanLine" translatesAutoresizingMaskIntoConstraints="NO" id="ChK-YR-OO2">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="7"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="7" id="CM0-A2-tiI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanQR1" translatesAutoresizingMaskIntoConstraints="NO" id="8kh-0e-fHB">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="3c1-zh-ThP"/>
+                                            <constraint firstAttribute="height" constant="32" id="q2w-Xo-zSX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanQR2" translatesAutoresizingMaskIntoConstraints="NO" id="Y8R-bu-bP1">
+                                        <rect key="frame" x="208" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="8cb-lg-lZz"/>
+                                            <constraint firstAttribute="width" constant="32" id="Nk8-0G-6vh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanQR4" translatesAutoresizingMaskIntoConstraints="NO" id="G40-4x-6Gd">
+                                        <rect key="frame" x="208" y="208" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="skv-Dk-vbL"/>
+                                            <constraint firstAttribute="height" constant="32" id="t2o-rd-Emj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScanQR3" translatesAutoresizingMaskIntoConstraints="NO" id="Xz4-AB-vV1">
+                                        <rect key="frame" x="0.0" y="208" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="Rz7-QV-9CK"/>
+                                            <constraint firstAttribute="height" constant="32" id="ddv-z2-TUy"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0MW-EM-03I"/>
+                                    <constraint firstAttribute="bottom" secondItem="G40-4x-6Gd" secondAttribute="bottom" id="5iR-Va-qSQ"/>
+                                    <constraint firstItem="Y8R-bu-bP1" firstAttribute="top" secondItem="TLO-LW-5N7" secondAttribute="top" id="BNz-iB-Kz0"/>
+                                    <constraint firstItem="ChK-YR-OO2" firstAttribute="width" secondItem="TLO-LW-5N7" secondAttribute="width" id="CGD-gs-WO1"/>
+                                    <constraint firstAttribute="trailing" secondItem="G40-4x-6Gd" secondAttribute="trailing" id="Fnq-3B-MQi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y8R-bu-bP1" secondAttribute="trailing" id="G2D-Bl-81Z"/>
+                                    <constraint firstItem="ChK-YR-OO2" firstAttribute="centerX" secondItem="TLO-LW-5N7" secondAttribute="centerX" id="evN-cd-8x2"/>
+                                    <constraint firstItem="ChK-YR-OO2" firstAttribute="top" secondItem="TLO-LW-5N7" secondAttribute="top" id="gz5-zF-lKp"/>
+                                    <constraint firstItem="8kh-0e-fHB" firstAttribute="leading" secondItem="TLO-LW-5N7" secondAttribute="leading" id="hen-j4-zR4"/>
+                                    <constraint firstAttribute="height" constant="240" id="iYK-du-uSs"/>
+                                    <constraint firstItem="8kh-0e-fHB" firstAttribute="top" secondItem="TLO-LW-5N7" secondAttribute="top" id="lkz-Z9-h0a"/>
+                                    <constraint firstItem="Xz4-AB-vV1" firstAttribute="leading" secondItem="TLO-LW-5N7" secondAttribute="leading" id="pan-xR-vMl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xz4-AB-vV1" secondAttribute="bottom" id="qKa-MR-SWQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVV-5F-xW5">
+                                <rect key="frame" x="67.5" y="473.5" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="TLO-LW-5N7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AmZ-gQ-gBA"/>
+                            <constraint firstItem="VVV-5F-xW5" firstAttribute="top" secondItem="TLO-LW-5N7" secondAttribute="bottom" constant="20" id="Ovb-wG-UIB"/>
+                            <constraint firstItem="TLO-LW-5N7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P80-w0-kyG"/>
+                            <constraint firstItem="TLO-LW-5N7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TCb-bs-pzA"/>
+                            <constraint firstItem="VVV-5F-xW5" firstAttribute="leading" secondItem="TLO-LW-5N7" secondAttribute="leading" id="m6R-uB-Ytm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="result" destination="VVV-5F-xW5" id="cHV-xb-iXo"/>
+                        <outlet property="scanView" destination="TLO-LW-5N7" id="6HV-Nj-fgM"/>
+                        <outlet property="scanViewH" destination="iYK-du-uSs" id="IQO-ef-nu9"/>
+                        <outlet property="scanline" destination="ChK-YR-OO2" id="Eek-sa-IAG"/>
+                        <outlet property="scanlineTop" destination="gz5-zF-lKp" id="Tzd-rP-sRs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3209" y="-118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ScanQR1" width="16" height="16"/>
+        <image name="ScanQR2" width="16" height="16"/>
+        <image name="ScanQR3" width="16" height="16"/>
+        <image name="ScanQR4" width="16" height="16"/>
+        <image name="scanLine" width="224" height="7"/>
+    </resources>
+</document>

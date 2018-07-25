@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-gm-lSN">
+                                <rect key="frame" x="172" y="268.5" width="31" height="30"/>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sW5-0I-kLn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA3-M8-E28">
+                                <rect key="frame" x="172" y="318.5" width="31" height="30"/>
+                                <state key="normal" title="暂停"/>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OJv-Wn-H0z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWJ-uE-dvI">
+                                <rect key="frame" x="172" y="368.5" width="31" height="30"/>
+                                <state key="normal" title="切歌"/>
+                                <connections>
+                                    <action selector="switchs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4EF-OG-p20"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id1-2a-IuD">
+                                <rect key="frame" x="164" y="418.5" width="46" height="30"/>
+                                <state key="normal" title="上一首"/>
+                                <connections>
+                                    <action selector="privious:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yw6-ak-qWB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cu-9u-Lg6">
+                                <rect key="frame" x="164" y="468.5" width="46" height="30"/>
+                                <state key="normal" title="下一首"/>
+                                <connections>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsF-35-5ef"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yA3-M8-E28" firstAttribute="top" secondItem="q3y-gm-lSN" secondAttribute="bottom" constant="20" id="4Qn-yE-Isc"/>
+                            <constraint firstItem="yA3-M8-E28" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="66n-qI-EMI"/>
+                            <constraint firstItem="PWJ-uE-dvI" firstAttribute="top" secondItem="yA3-M8-E28" secondAttribute="bottom" constant="20" id="DUR-qc-bvO"/>
+                            <constraint firstItem="id1-2a-IuD" firstAttribute="top" secondItem="PWJ-uE-dvI" secondAttribute="bottom" constant="20" id="PfZ-wX-t6b"/>
+                            <constraint firstItem="2cu-9u-Lg6" firstAttribute="top" secondItem="id1-2a-IuD" secondAttribute="bottom" constant="20" id="XLb-3J-d7o"/>
+                            <constraint firstItem="id1-2a-IuD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XSi-wA-X3Y"/>
+                            <constraint firstItem="2cu-9u-Lg6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xam-2w-3Ci"/>
+                            <constraint firstItem="yA3-M8-E28" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aMh-mx-eZu"/>
+                            <constraint firstItem="PWJ-uE-dvI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cSU-ON-au3"/>
+                            <constraint firstItem="q3y-gm-lSN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sl8-lv-vqB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

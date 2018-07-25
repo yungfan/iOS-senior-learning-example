@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQs-z8-Bpb">
+                                <rect key="frame" x="242.66666666666669" y="28" width="46.000000000000057" height="30"/>
+                                <state key="normal" title="拍视频"/>
+                                <connections>
+                                    <action selector="takeVedio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lmF-SD-vT4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dfP-mJ-vWs">
+                                <rect key="frame" x="82" y="243" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="hv3-IH-vNH"/>
+                                    <constraint firstAttribute="height" constant="250" id="iPN-cw-fQI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C87-VO-eUm">
+                                <rect key="frame" x="140.66666666666666" y="28" width="31" height="30"/>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jor-LQ-K8E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBJ-Gu-KZO">
+                                <rect key="frame" x="191.66666666666666" y="28" width="31" height="30"/>
+                                <state key="normal" title="相册"/>
+                                <connections>
+                                    <action selector="pickerPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wi-mN-3ZT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bQs-z8-Bpb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="9mG-Pk-tls"/>
+                            <constraint firstItem="dfP-mJ-vWs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D4c-HZ-dMg"/>
+                            <constraint firstItem="hBJ-Gu-KZO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="H02-RJ-ddu"/>
+                            <constraint firstItem="hBJ-Gu-KZO" firstAttribute="leading" secondItem="C87-VO-eUm" secondAttribute="trailing" constant="20" id="R9r-Ye-sLN"/>
+                            <constraint firstItem="hBJ-Gu-KZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ajk-kJ-ND4"/>
+                            <constraint firstItem="C87-VO-eUm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ejw-ZW-63Z"/>
+                            <constraint firstItem="dfP-mJ-vWs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hmu-L1-ZD7"/>
+                            <constraint firstItem="bQs-z8-Bpb" firstAttribute="leading" secondItem="hBJ-Gu-KZO" secondAttribute="trailing" constant="20" id="wA5-Kr-WGJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="dfP-mJ-vWs" id="dJC-K2-6gx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="617.93478260869574"/>
+        </scene>
+    </scenes>
+</document>

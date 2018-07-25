@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6kt-zM-Vqu">
+                                <rect key="frame" x="20" y="299" width="560" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxc-pv-vkt">
+                                <rect key="frame" x="268" y="234" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6kt-zM-Vqu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6If-ZB-6EX"/>
+                            <constraint firstItem="Kxc-pv-vkt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9ha-bL-WJV"/>
+                            <constraint firstItem="6kt-zM-Vqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nra-2A-RmD"/>
+                            <constraint firstItem="6kt-zM-Vqu" firstAttribute="top" secondItem="Kxc-pv-vkt" secondAttribute="bottom" constant="44" id="R45-sw-uWk"/>
+                            <constraint firstItem="6kt-zM-Vqu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aoC-3S-2pd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6kt-zM-Vqu" secondAttribute="trailing" id="was-59-Wo1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="uploadInfo" destination="Kxc-pv-vkt" id="BEe-4v-n9J"/>
+                        <outlet property="uploadProgress" destination="6kt-zM-Vqu" id="83U-Gc-gj7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184" y="469"/>
+        </scene>
+    </scenes>
+</document>
