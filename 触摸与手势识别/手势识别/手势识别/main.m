@@ -2,8 +2,8 @@
 //  main.m
 //  手势识别
 //
-//  Created by teacher on 17/2/17.
-//  Copyright © 2017年 安徽商贸职业技术学院. All rights reserved.
+//  Created by student on 2019/2/26.
+//  Copyright © 2019 abc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
