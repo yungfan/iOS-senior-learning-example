@@ -1,9 +1,9 @@
 //
 //  ViewController.m
-//  NThread多线程
+//  NSThread的使用
 //
-//  Created by student on 2018/4/8.
-//  Copyright © 2018年 student. All rights reserved.
+//  Created by student on 2019/3/1.
+//  Copyright © 2019 abc. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -16,63 +16,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
-    __block int count = 20;
-    
-    NSLog(@"方法执行开始");
-
-
-    
-    NSThread *thread = [[NSThread alloc]initWithBlock:^{
-        
-        NSLog(@"线程1方法执行开始");
-        
-        for (int i = 0; i < 10; i++) {
-            
-            [NSThread sleepForTimeInterval:1.0];
-            
-            NSLog(@"11报数：%d", i);
-            
-            count--;
-        }
-        
-        
-        
-        NSLog(@"线程1 count = %d", count);
-        
-        NSLog(@"线程1方法执行完毕");
-        
-    }];
-    
-    
-    NSThread *thread2 = [[NSThread alloc]initWithBlock:^{
-        
-        NSLog(@"线程2方法执行开始");
-        
-        for (int i = 0; i < 10; i++) {
-            
-            [NSThread sleepForTimeInterval:1.5];
-            
-            NSLog(@"22报数：%d", i);
-            
-            count--;
-        }
-        
-        
-        
-        NSLog(@"线程2 count = %d", count);
-        
-        NSLog(@"线程2方法执行完毕");
-        
-    }];
-    
-    
-    [thread start];
-    
-    [thread2 start];
-    
-    NSLog(@"方法执行完毕");
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    //打印主线程
+    NSLog(@"%@", [NSThread currentThread]);
+    
+    
+    //放在主线程中执行 完成触摸 会很久才打印 界面会卡死
+    for (NSInteger i =1 ; i<=5; i++) {
+        NSLog(@"%li-%@",(long)i, [NSThread currentThread]);
+    }
+    
+    
+    //第一种使用方式
+    [NSThread detachNewThreadWithBlock:^{
+        
+        //放在子线程中执行 完成触摸 会瞬间打印
+        for (NSInteger i =1 ; i<=5; i++) {
+            NSLog(@"%li-%@",(long)i, [NSThread currentThread]);
+        }
+        
+        
+    }];
+    
+    //第二种使用方式
+    [NSThread detachNewThreadSelector:@selector(runThread) toTarget:self withObject:nil];
+    
+    
+    NSLog(@"完成触摸");
+    
+}
+
+
+-(void)runThread{
+    
+    for (NSInteger i =6 ; i<=10; i++) {
+        NSLog(@"%li-%@",(long)i, [NSThread currentThread]);
+    }
+    
+}
 
 @end
