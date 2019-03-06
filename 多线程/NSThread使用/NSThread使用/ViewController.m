@@ -2,8 +2,8 @@
 //  ViewController.m
 //  NSThread使用
 //
-//  Created by teacher on 17/3/20.
-//  Copyright © 2017年 安徽商贸职业技术学院. All rights reserved.
+//  Created by student on 2019/3/5.
+//  Copyright © 2019 abc. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -16,60 +16,90 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    
-    //当iOS程序运行以后，有一个线程随之启动，主线程（main），这个线程很重要，可以接收用户的交互，更新程序的界面等等，因此它的流畅性必须要保证 －－－> 言外之意，耗时的操作不能放在主线程中来执行，否则会造成界面的卡顿甚至崩溃  －－－> 耗时的操作放在子线程中执行 －－－> 比如线程去服务器加载一段新闻数据，拿到新闻数据以后，我要更新界面（Apple直接规定不能在子线程更新主界面，必须回到主线程才行）？－－－> 子线程执行耗时任务，主线程来刷新界面，他们之间需要进行数据的交互和通信
-    
-    //1、类方法，自动启动
-    //[NSThread detachNewThreadSelector:@selector(count) toTarget:self withObject:nil];
-    
-    //2、对象方法，需手动启动
-    NSThread *newThread =  [[NSThread alloc]initWithTarget:self selector:@selector(count) object:nil];
-    
-    newThread.name = @"子线程";
-    
-    [newThread start];
-    
-    [self initData];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
--(void)count{
-   
-    NSLog(@"子线程执行开始");
+ //当iOS程序运行以后，有一个线程随之启动，主线程（main），这个线程很重要，可以接收用户的交互，更新程序的界面等等，因此它的流畅性必须要保证 －－－> 言外之意，耗时的操作不能放在主线程中来执行，否则会造成界面的卡顿甚至崩溃  －－－> 耗时的操作放在子线程中执行 －－－> 比如线程去服务器加载一段新闻数据，拿到新闻数据以后，我要更新界面（Apple直接规定不能在子线程更新主界面，必须回到主线程才行）？－－－> 子线程执行耗时任务，主线程来刷新界面，他们之间需要进行数据的交互和通信
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    NSLog(@"%@", [NSThread currentThread].name);
+    if (NSThread.isMainThread) {
+        
+        NSLog(@"%s 主线程", __func__);
+    }
     
-    for (int i = 1; i<10; i++) {
+    [self targetActionMethod];
+    
+    //[self blockMethod];
+    
+    
+    //主线程中调用whereAmI
+    [self whereAmI];
+}
+
+
+-(void)targetActionMethod{
+    
+    //对象方法，需手动启动
+    NSThread *thread = [[NSThread alloc]initWithTarget:self selector:@selector(runThread) object:nil];
+
+    thread.name = @"长江八号";
+    
+    thread.threadPriority = 0.3;
+    
+    [thread start];
+    
+}
+
+-(void)runThread{
+    
+    for (int i = 10; i < 20; i++) {
         
-        [NSThread sleepForTimeInterval:1.0];
+        //休眠
+        //[NSThread sleepForTimeInterval:1.0];
         
-        NSLog(@"%d", i);
+        NSLog(@"%d -- %@", i, [NSThread currentThread]);
         
+        [self whereAmI];
         
     }
     
-    
-    //子线程中调用的方法仍然处于子线程
-    [self initData];
-    
+}
 
-    //回到主线程执行
-    //waitUntilDone 如果值为YES：当前方法调用完毕以后才会继续往下执行 NO：直接往后执行
-    //[self performSelectorOnMainThread:@selector(initData) withObject:nil waitUntilDone:NO];
+-(void)blockMethod{
     
-    [self performSelector:@selector(initData) onThread:[NSThread mainThread] withObject:nil waitUntilDone:NO];
+    //对象方法，需手动启动
+    NSThread *thread = [[NSThread alloc]initWithBlock:^{
+        
+        for (int i = 0; i < 10; i++) {
+            
+            
+            //[NSThread sleepForTimeInterval:1.0];
+            
+            NSLog(@"%d -- %@", i, [NSThread currentThread]);
+            
+            if (NSThread.isMainThread) {
+                
+                NSLog(@"主线程");
+            }
+            
+        }
+        
+    }];
     
-    NSLog(@"子线程执行结束");
+    thread.threadPriority = 0.8;
+    
+    thread.name = @"长江七号";
+    
+    [thread start];
+    
 }
 
 
--(void)initData{
+//同一个方法，在主线程中调用则该方法处于主线程，在子线程中调用则处于子线程，不能仅仅看方法的声明和所处的位置
+-(void)whereAmI{
     
-    
-    NSLog(@"%@", [NSThread currentThread]);
-
+    NSLog(@"%s -- %@", __func__, [NSThread currentThread]);
     
 }
-
 
 @end

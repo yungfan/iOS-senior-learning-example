@@ -31,6 +31,7 @@
     }
     
     
+    //类方法，线程会自动启动
     //第一种使用方式
     [NSThread detachNewThreadWithBlock:^{
         
