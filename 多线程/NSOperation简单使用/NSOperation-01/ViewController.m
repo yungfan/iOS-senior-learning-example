@@ -16,10 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     [self setInvocationOperation];
-
     
 }
 
@@ -54,6 +56,7 @@
     
     NSOperationQueue *opq = [[NSOperationQueue alloc]init];
     
+    //同时添加多个
     [opq addOperations:@[op1, op2, op3] waitUntilFinished:NO];
     
     NSLog(@"Finished --- %@", [NSThread currentThread]);
@@ -72,11 +75,17 @@
     
     NSInvocationOperation *operation3 = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(run:) object:@"🐎快跑"];
     
-    
+    /*
+     创建队列
+     默认是并发队列,如果最大并发数>1,并发
+     如果最大并发数==1,串行队列
+     系统的默认是最大并发数-1 ,表示不限制
+     设置成0则不会执行任何操作
+     */
     NSOperationQueue *operationQ = [[NSOperationQueue alloc]init];
     operationQ.maxConcurrentOperationCount = 2;
     
-    
+    //可以一个个添加
     [operationQ addOperation:operation1];
     [operationQ addOperation:operation2];
     [operationQ addOperation:operation3];

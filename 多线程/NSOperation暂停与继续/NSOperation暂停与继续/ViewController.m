@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,13 +69,13 @@
         
         NSLog(@"下载电影3结束");
         
-      
+        
     }];
     
     
     NSOperationQueue *opq = [[NSOperationQueue alloc]init];
     
-    opq.maxConcurrentOperationCount = 3;
+    opq.maxConcurrentOperationCount = 2;
     
     self.operationQueue = opq;
     
@@ -90,7 +90,7 @@
     if (self.operationQueue.operationCount != 0 && self.operationQueue.suspended == NO) {
         self.operationQueue.suspended = YES;
     }
-
+    
 }
 
 
@@ -100,14 +100,17 @@
     if (self.operationQueue.operationCount != 0 && self.operationQueue.suspended == YES) {
         self.operationQueue.suspended = NO;
     }
-
+    
 }
 
 //NSOperationQueue中的那些还没有被CPU调度的线程才会取消执行，无法再次让它们运行
 - (IBAction)cancel:(id)sender {
     
-    
-    [self.operationQueue cancelAllOperations];
-    
+    if (self.operationQueue.operationCount != 0){
+        
+        [self.operationQueue cancelAllOperations];
+        
+    }
 }
+
 @end
