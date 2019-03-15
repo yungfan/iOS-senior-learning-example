@@ -1,9 +1,9 @@
 //
 //  main.m
-//  子线程更新UI
+//  多线程更新界面问题
 //
-//  Created by student on 2018/4/13.
-//  Copyright © 2018年 student. All rights reserved.
+//  Created by student on 2019/3/15.
+//  Copyright © 2019 abc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
