@@ -10,7 +10,9 @@
 
 @interface ViewController ()
 
-@property(nonatomic, assign) int count;
+@property(nonatomic, assign) int totalTicket;
+
+@property(nonatomic, strong) NSLock *lock;
 
 @end
 
@@ -18,9 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
- 
     
-    _count = 20;
+    
+    _totalTicket = 20;
+    _lock = [[NSLock alloc]init];
     
     
     NSThread *thread1 = [[NSThread alloc]initWithTarget:self selector:@selector(buyTicket) object:nil];
@@ -41,13 +44,14 @@
     
 }
 
+
+#pragma mark - 解决方法一@synchronized
 -(void)buyTicket{
     
     while (true) {
         
         
         [NSThread sleepForTimeInterval:1];
-        
         //对于临界资源 多线程访问往往会出现问题 加锁可以解决
         
         //加锁的结果：每次只有一个线程可以访问临界资源
@@ -57,31 +61,56 @@
         
         @synchronized (self) {
             
-            if (_count > 0) {
+            if (_totalTicket > 0) {
                 
-                _count--;
+                _totalTicket--;
                 
-                NSLog(@"%@----%d", [NSThread currentThread],_count);
-                
+                NSLog(@"%@卖出去一张票，还剩%d", [NSThread currentThread].name, _totalTicket);
             }
             
             else{
                 
+                NSLog(@"卖完了! %@",[NSThread currentThread].name);
                 break;
             }
             
         }
         
-
+        
     }
-
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 解决方法一NSLock
+-(void)buyTicket2{
+    
+    while (true) {
+        
+        
+        [NSThread sleepForTimeInterval:1];
+        //加锁
+        [_lock lock];
+        
+        if (_totalTicket > 0) {
+            
+            _totalTicket--;
+            
+            NSLog(@"%@----%d", [NSThread currentThread].name,_totalTicket);
+            
+        }
+        
+        else{
+            
+            NSLog(@"卖完了! %@",[NSThread currentThread].name);
+            break;
+        }
+        
+        //解锁
+        [_lock unlock];
+    }
+    
 }
+
 
 
 @end
