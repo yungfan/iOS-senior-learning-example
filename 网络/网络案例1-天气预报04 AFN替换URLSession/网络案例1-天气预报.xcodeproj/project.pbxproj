@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F648A73224C686800652040 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A6A224C686800652040 /* AFURLResponseSerialization.m */; };
+		3F648A74224C686800652040 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A6B224C686800652040 /* AFHTTPSessionManager.m */; };
+		3F648A75224C686800652040 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A6D224C686800652040 /* AFURLSessionManager.m */; };
+		3F648A76224C686800652040 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A6E224C686800652040 /* AFURLRequestSerialization.m */; };
+		3F648A77224C686800652040 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A70224C686800652040 /* AFNetworkReachabilityManager.m */; };
+		3F648A78224C686800652040 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A71224C686800652040 /* AFSecurityPolicy.m */; };
+		3F648AA2224C68A100652040 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A7A224C68A100652040 /* UIImage+WebP.m */; };
+		3F648AA3224C68A100652040 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A7B224C68A100652040 /* MKAnnotationView+WebCache.m */; };
+		3F648AA4224C68A100652040 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A7F224C68A100652040 /* SDWebImageManager.m */; };
+		3F648AA5224C68A100652040 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A80224C68A100652040 /* SDWebImageDecoder.m */; };
+		3F648AA6224C68A100652040 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A82224C68A100652040 /* UIImageView+HighlightedWebCache.m */; };
+		3F648AA7224C68A100652040 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A86224C68A100652040 /* SDWebImageDownloader.m */; };
+		3F648AA8224C68A100652040 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A87224C68A100652040 /* UIImage+GIF.m */; };
+		3F648AA9224C68A100652040 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A89224C68A100652040 /* UIImage+MultiFormat.m */; };
+		3F648AAA224C68A100652040 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A8A224C68A100652040 /* SDWebImageCompat.m */; };
+		3F648AAB224C68A100652040 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A8B224C68A100652040 /* SDWebImagePrefetcher.m */; };
+		3F648AAC224C68A100652040 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A90224C68A100652040 /* SDImageCache.m */; };
+		3F648AAD224C68A100652040 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A92224C68A100652040 /* SDWebImageDownloaderOperation.m */; };
+		3F648AAE224C68A100652040 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A95224C68A100652040 /* NSData+ImageContentType.m */; };
+		3F648AAF224C68A100652040 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A96224C68A100652040 /* UIImageView+WebCache.m */; };
+		3F648AB0224C68A100652040 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A98224C68A100652040 /* NSImage+WebCache.m */; };
+		3F648AB1224C68A100652040 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A9A224C68A100652040 /* SDImageCacheConfig.m */; };
+		3F648AB2224C68A100652040 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A9B224C68A100652040 /* UIView+WebCacheOperation.m */; };
+		3F648AB3224C68A100652040 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648A9C224C68A100652040 /* UIView+WebCache.m */; };
+		3F648AB4224C68A100652040 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F648AA0224C68A100652040 /* UIButton+WebCache.m */; };
+		3FEA23DB224332F30051ABCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA23DA224332F30051ABCF /* AppDelegate.m */; };
+		3FEA23DE224332F30051ABCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA23DD224332F30051ABCF /* ViewController.m */; };
+		3FEA23E1224332F30051ABCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA23DF224332F30051ABCF /* Main.storyboard */; };
+		3FEA23E3224332F40051ABCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA23E2224332F40051ABCF /* Assets.xcassets */; };
+		3FEA23E6224332F40051ABCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA23E4224332F40051ABCF /* LaunchScreen.storyboard */; };
+		3FEA23E9224332F40051ABCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA23E8224332F40051ABCF /* main.m */; };
+		3FEA23F3224332F40051ABCF /* ____1_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA23F2224332F40051ABCF /* ____1_____Tests.m */; };
+		3FEA23FE224332F40051ABCF /* ____1_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA23FD224332F40051ABCF /* ____1_____UITests.m */; };
+		3FF1020B2244B24700005BBD /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1020A2244B24700005BBD /* Weather.m */; };
+		3FF1020E2244BFBB00005BBD /* WeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1020D2244BFBB00005BBD /* WeatherCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FEA23EF224332F40051ABCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FEA23CE224332F30051ABCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FEA23D5224332F30051ABCF;
+			remoteInfo = "网络案例1-天气预报";
+		};
+		3FEA23FA224332F40051ABCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FEA23CE224332F30051ABCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FEA23D5224332F30051ABCF;
+			remoteInfo = "网络案例1-天气预报";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F648A66224C686800652040 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		3F648A67224C686800652040 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		3F648A68224C686800652040 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		3F648A69224C686800652040 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		3F648A6A224C686800652040 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		3F648A6B224C686800652040 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		3F648A6C224C686800652040 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		3F648A6D224C686800652040 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		3F648A6E224C686800652040 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		3F648A6F224C686800652040 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		3F648A70224C686800652040 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		3F648A71224C686800652040 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		3F648A72224C686800652040 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		3F648A7A224C68A100652040 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		3F648A7B224C68A100652040 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		3F648A7C224C68A100652040 /* NSImage+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+WebCache.h"; sourceTree = "<group>"; };
+		3F648A7D224C68A100652040 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		3F648A7E224C68A100652040 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		3F648A7F224C68A100652040 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		3F648A80224C68A100652040 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		3F648A81224C68A100652040 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		3F648A82224C68A100652040 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		3F648A83224C68A100652040 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		3F648A84224C68A100652040 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheConfig.h; sourceTree = "<group>"; };
+		3F648A86224C68A100652040 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		3F648A87224C68A100652040 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		3F648A88224C68A100652040 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		3F648A89224C68A100652040 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		3F648A8A224C68A100652040 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		3F648A8B224C68A100652040 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		3F648A8C224C68A100652040 /* UIView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCache.h"; sourceTree = "<group>"; };
+		3F648A8D224C68A100652040 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		3F648A8E224C68A100652040 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		3F648A8F224C68A100652040 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		3F648A90224C68A100652040 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		3F648A91224C68A100652040 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		3F648A92224C68A100652040 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		3F648A93224C68A100652040 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		3F648A94224C68A100652040 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		3F648A95224C68A100652040 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		3F648A96224C68A100652040 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		3F648A97224C68A100652040 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		3F648A98224C68A100652040 /* NSImage+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+WebCache.m"; sourceTree = "<group>"; };
+		3F648A99224C68A100652040 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		3F648A9A224C68A100652040 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCacheConfig.m; sourceTree = "<group>"; };
+		3F648A9B224C68A100652040 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		3F648A9C224C68A100652040 /* UIView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCache.m"; sourceTree = "<group>"; };
+		3F648A9D224C68A100652040 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		3F648A9E224C68A100652040 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		3F648A9F224C68A100652040 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		3F648AA0224C68A100652040 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		3F648AA1224C68A100652040 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		3FEA23D6224332F30051ABCF /* 网络案例1-天气预报.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网络案例1-天气预报.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEA23D9224332F30051ABCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FEA23DA224332F30051ABCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FEA23DC224332F30051ABCF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3FEA23DD224332F30051ABCF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FEA23E0224332F30051ABCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FEA23E2224332F40051ABCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FEA23E5224332F40051ABCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FEA23E7224332F40051ABCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEA23E8224332F40051ABCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FEA23EE224332F40051ABCF /* 网络案例1-天气预报Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网络案例1-天气预报Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEA23F2224332F40051ABCF /* ____1_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____1_____Tests.m"; sourceTree = "<group>"; };
+		3FEA23F4224332F40051ABCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FEA23F9224332F40051ABCF /* 网络案例1-天气预报UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "网络案例1-天气预报UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEA23FD224332F40051ABCF /* ____1_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____1_____UITests.m"; sourceTree = "<group>"; };
+		3FEA23FF224332F40051ABCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF102092244B24700005BBD /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		3FF1020A2244B24700005BBD /* Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		3FF1020C2244BFBB00005BBD /* WeatherCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherCell.h; sourceTree = "<group>"; };
+		3FF1020D2244BFBB00005BBD /* WeatherCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FEA23D3224332F30051ABCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEA23EB224332F40051ABCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEA23F6224332F40051ABCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F648A65224C686800652040 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3F648A66224C686800652040 /* AFSecurityPolicy.h */,
+				3F648A67224C686800652040 /* AFNetworkReachabilityManager.h */,
+				3F648A68224C686800652040 /* AFURLSessionManager.h */,
+				3F648A69224C686800652040 /* AFURLRequestSerialization.h */,
+				3F648A6A224C686800652040 /* AFURLResponseSerialization.m */,
+				3F648A6B224C686800652040 /* AFHTTPSessionManager.m */,
+				3F648A6C224C686800652040 /* AFURLResponseSerialization.h */,
+				3F648A6D224C686800652040 /* AFURLSessionManager.m */,
+				3F648A6E224C686800652040 /* AFURLRequestSerialization.m */,
+				3F648A6F224C686800652040 /* AFNetworking.h */,
+				3F648A70224C686800652040 /* AFNetworkReachabilityManager.m */,
+				3F648A71224C686800652040 /* AFSecurityPolicy.m */,
+				3F648A72224C686800652040 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		3F648A79224C68A100652040 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				3F648A7A224C68A100652040 /* UIImage+WebP.m */,
+				3F648A7B224C68A100652040 /* MKAnnotationView+WebCache.m */,
+				3F648A7C224C68A100652040 /* NSImage+WebCache.h */,
+				3F648A7D224C68A100652040 /* UIImageView+WebCache.h */,
+				3F648A7E224C68A100652040 /* NSData+ImageContentType.h */,
+				3F648A7F224C68A100652040 /* SDWebImageManager.m */,
+				3F648A80224C68A100652040 /* SDWebImageDecoder.m */,
+				3F648A81224C68A100652040 /* SDWebImageDownloaderOperation.h */,
+				3F648A82224C68A100652040 /* UIImageView+HighlightedWebCache.m */,
+				3F648A83224C68A100652040 /* SDImageCache.h */,
+				3F648A84224C68A100652040 /* SDImageCacheConfig.h */,
+				3F648A85224C68A100652040 /* FLAnimatedImage */,
+				3F648A86224C68A100652040 /* SDWebImageDownloader.m */,
+				3F648A87224C68A100652040 /* UIImage+GIF.m */,
+				3F648A88224C68A100652040 /* UIButton+WebCache.h */,
+				3F648A89224C68A100652040 /* UIImage+MultiFormat.m */,
+				3F648A8A224C68A100652040 /* SDWebImageCompat.m */,
+				3F648A8B224C68A100652040 /* SDWebImagePrefetcher.m */,
+				3F648A8C224C68A100652040 /* UIView+WebCache.h */,
+				3F648A8D224C68A100652040 /* UIView+WebCacheOperation.h */,
+				3F648A8E224C68A100652040 /* MKAnnotationView+WebCache.h */,
+				3F648A8F224C68A100652040 /* UIImage+WebP.h */,
+				3F648A90224C68A100652040 /* SDImageCache.m */,
+				3F648A91224C68A100652040 /* UIImageView+HighlightedWebCache.h */,
+				3F648A92224C68A100652040 /* SDWebImageDownloaderOperation.m */,
+				3F648A93224C68A100652040 /* SDWebImageDecoder.h */,
+				3F648A94224C68A100652040 /* SDWebImageManager.h */,
+				3F648A95224C68A100652040 /* NSData+ImageContentType.m */,
+				3F648A96224C68A100652040 /* UIImageView+WebCache.m */,
+				3F648A97224C68A100652040 /* SDWebImageOperation.h */,
+				3F648A98224C68A100652040 /* NSImage+WebCache.m */,
+				3F648A99224C68A100652040 /* SDWebImageDownloader.h */,
+				3F648A9A224C68A100652040 /* SDImageCacheConfig.m */,
+				3F648A9B224C68A100652040 /* UIView+WebCacheOperation.m */,
+				3F648A9C224C68A100652040 /* UIView+WebCache.m */,
+				3F648A9D224C68A100652040 /* SDWebImagePrefetcher.h */,
+				3F648A9E224C68A100652040 /* SDWebImageCompat.h */,
+				3F648A9F224C68A100652040 /* UIImage+MultiFormat.h */,
+				3F648AA0224C68A100652040 /* UIButton+WebCache.m */,
+				3F648AA1224C68A100652040 /* UIImage+GIF.h */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		3F648A85224C68A100652040 /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		3FEA23CD224332F30051ABCF = {
+			isa = PBXGroup;
+			children = (
+				3FEA23D8224332F30051ABCF /* 网络案例1-天气预报 */,
+				3FEA23F1224332F40051ABCF /* 网络案例1-天气预报Tests */,
+				3FEA23FC224332F40051ABCF /* 网络案例1-天气预报UITests */,
+				3FEA23D7224332F30051ABCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FEA23D7224332F30051ABCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FEA23D6224332F30051ABCF /* 网络案例1-天气预报.app */,
+				3FEA23EE224332F40051ABCF /* 网络案例1-天气预报Tests.xctest */,
+				3FEA23F9224332F40051ABCF /* 网络案例1-天气预报UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FEA23D8224332F30051ABCF /* 网络案例1-天气预报 */ = {
+			isa = PBXGroup;
+			children = (
+				3F648A79224C68A100652040 /* SDWebImage */,
+				3F648A65224C686800652040 /* AFNetworking */,
+				3FEA23D9224332F30051ABCF /* AppDelegate.h */,
+				3FEA23DA224332F30051ABCF /* AppDelegate.m */,
+				3FEA23DC224332F30051ABCF /* ViewController.h */,
+				3FEA23DD224332F30051ABCF /* ViewController.m */,
+				3FEA23DF224332F30051ABCF /* Main.storyboard */,
+				3FEA23E2224332F40051ABCF /* Assets.xcassets */,
+				3FEA23E4224332F40051ABCF /* LaunchScreen.storyboard */,
+				3FEA23E7224332F40051ABCF /* Info.plist */,
+				3FEA23E8224332F40051ABCF /* main.m */,
+				3FF102092244B24700005BBD /* Weather.h */,
+				3FF1020A2244B24700005BBD /* Weather.m */,
+				3FF1020C2244BFBB00005BBD /* WeatherCell.h */,
+				3FF1020D2244BFBB00005BBD /* WeatherCell.m */,
+			);
+			path = "网络案例1-天气预报";
+			sourceTree = "<group>";
+		};
+		3FEA23F1224332F40051ABCF /* 网络案例1-天气预报Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3FEA23F2224332F40051ABCF /* ____1_____Tests.m */,
+				3FEA23F4224332F40051ABCF /* Info.plist */,
+			);
+			path = "网络案例1-天气预报Tests";
+			sourceTree = "<group>";
+		};
+		3FEA23FC224332F40051ABCF /* 网络案例1-天气预报UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FEA23FD224332F40051ABCF /* ____1_____UITests.m */,
+				3FEA23FF224332F40051ABCF /* Info.plist */,
+			);
+			path = "网络案例1-天气预报UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FEA23D5224332F30051ABCF /* 网络案例1-天气预报 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEA2402224332F40051ABCF /* Build configuration list for PBXNativeTarget "网络案例1-天气预报" */;
+			buildPhases = (
+				3FEA23D2224332F30051ABCF /* Sources */,
+				3FEA23D3224332F30051ABCF /* Frameworks */,
+				3FEA23D4224332F30051ABCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "网络案例1-天气预报";
+			productName = "网络案例1-天气预报";
+			productReference = 3FEA23D6224332F30051ABCF /* 网络案例1-天气预报.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FEA23ED224332F40051ABCF /* 网络案例1-天气预报Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEA2405224332F40051ABCF /* Build configuration list for PBXNativeTarget "网络案例1-天气预报Tests" */;
+			buildPhases = (
+				3FEA23EA224332F40051ABCF /* Sources */,
+				3FEA23EB224332F40051ABCF /* Frameworks */,
+				3FEA23EC224332F40051ABCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FEA23F0224332F40051ABCF /* PBXTargetDependency */,
+			);
+			name = "网络案例1-天气预报Tests";
+			productName = "网络案例1-天气预报Tests";
+			productReference = 3FEA23EE224332F40051ABCF /* 网络案例1-天气预报Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FEA23F8224332F40051ABCF /* 网络案例1-天气预报UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEA2408224332F40051ABCF /* Build configuration list for PBXNativeTarget "网络案例1-天气预报UITests" */;
+			buildPhases = (
+				3FEA23F5224332F40051ABCF /* Sources */,
+				3FEA23F6224332F40051ABCF /* Frameworks */,
+				3FEA23F7224332F40051ABCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FEA23FB224332F40051ABCF /* PBXTargetDependency */,
+			);
+			name = "网络案例1-天气预报UITests";
+			productName = "网络案例1-天气预报UITests";
+			productReference = 3FEA23F9224332F40051ABCF /* 网络案例1-天气预报UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FEA23CE224332F30051ABCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = abc;
+				TargetAttributes = {
+					3FEA23D5224332F30051ABCF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3FEA23ED224332F40051ABCF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3FEA23D5224332F30051ABCF;
+					};
+					3FEA23F8224332F40051ABCF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3FEA23D5224332F30051ABCF;
+					};
+				};
+			};
+			buildConfigurationList = 3FEA23D1224332F30051ABCF /* Build configuration list for PBXProject "网络案例1-天气预报" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FEA23CD224332F30051ABCF;
+			productRefGroup = 3FEA23D7224332F30051ABCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FEA23D5224332F30051ABCF /* 网络案例1-天气预报 */,
+				3FEA23ED224332F40051ABCF /* 网络案例1-天气预报Tests */,
+				3FEA23F8224332F40051ABCF /* 网络案例1-天气预报UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FEA23D4224332F30051ABCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEA23E6224332F40051ABCF /* LaunchScreen.storyboard in Resources */,
+				3FEA23E3224332F40051ABCF /* Assets.xcassets in Resources */,
+				3FEA23E1224332F30051ABCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEA23EC224332F40051ABCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEA23F7224332F40051ABCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FEA23D2224332F30051ABCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F648AA8224C68A100652040 /* UIImage+GIF.m in Sources */,
+				3F648A76224C686800652040 /* AFURLRequestSerialization.m in Sources */,
+				3F648AA4224C68A100652040 /* SDWebImageManager.m in Sources */,
+				3F648AA9224C68A100652040 /* UIImage+MultiFormat.m in Sources */,
+				3F648AA6224C68A100652040 /* UIImageView+HighlightedWebCache.m in Sources */,
+				3FF1020B2244B24700005BBD /* Weather.m in Sources */,
+				3F648A77224C686800652040 /* AFNetworkReachabilityManager.m in Sources */,
+				3F648AB4224C68A100652040 /* UIButton+WebCache.m in Sources */,
+				3F648AAF224C68A100652040 /* UIImageView+WebCache.m in Sources */,
+				3F648AAC224C68A100652040 /* SDImageCache.m in Sources */,
+				3F648A75224C686800652040 /* AFURLSessionManager.m in Sources */,
+				3F648AB1224C68A100652040 /* SDImageCacheConfig.m in Sources */,
+				3FEA23DE224332F30051ABCF /* ViewController.m in Sources */,
+				3F648AAE224C68A100652040 /* NSData+ImageContentType.m in Sources */,
+				3FF1020E2244BFBB00005BBD /* WeatherCell.m in Sources */,
+				3F648AA5224C68A100652040 /* SDWebImageDecoder.m in Sources */,
+				3FEA23E9224332F40051ABCF /* main.m in Sources */,
+				3F648AA2224C68A100652040 /* UIImage+WebP.m in Sources */,
+				3F648A73224C686800652040 /* AFURLResponseSerialization.m in Sources */,
+				3F648AA7224C68A100652040 /* SDWebImageDownloader.m in Sources */,
+				3F648AB0224C68A100652040 /* NSImage+WebCache.m in Sources */,
+				3F648AB3224C68A100652040 /* UIView+WebCache.m in Sources */,
+				3F648AAB224C68A100652040 /* SDWebImagePrefetcher.m in Sources */,
+				3F648AAD224C68A100652040 /* SDWebImageDownloaderOperation.m in Sources */,
+				3F648A74224C686800652040 /* AFHTTPSessionManager.m in Sources */,
+				3F648AA3224C68A100652040 /* MKAnnotationView+WebCache.m in Sources */,
+				3F648AB2224C68A100652040 /* UIView+WebCacheOperation.m in Sources */,
+				3F648AAA224C68A100652040 /* SDWebImageCompat.m in Sources */,
+				3F648A78224C686800652040 /* AFSecurityPolicy.m in Sources */,
+				3FEA23DB224332F30051ABCF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEA23EA224332F40051ABCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEA23F3224332F40051ABCF /* ____1_____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEA23F5224332F40051ABCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEA23FE224332F40051ABCF /* ____1_____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FEA23F0224332F40051ABCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FEA23D5224332F30051ABCF /* 网络案例1-天气预报 */;
+			targetProxy = 3FEA23EF224332F40051ABCF /* PBXContainerItemProxy */;
+		};
+		3FEA23FB224332F40051ABCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FEA23D5224332F30051ABCF /* 网络案例1-天气预报 */;
+			targetProxy = 3FEA23FA224332F40051ABCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FEA23DF224332F30051ABCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FEA23E0224332F30051ABCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FEA23E4224332F40051ABCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FEA23E5224332F40051ABCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FEA2400224332F40051ABCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FEA2401224332F40051ABCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FEA2403224332F40051ABCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "网络案例1-天气预报/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.----1-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FEA2404224332F40051ABCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "网络案例1-天气预报/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.----1-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FEA2406224332F40051ABCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "网络案例1-天气预报Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.----1-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/网络案例1-天气预报.app/网络案例1-天气预报";
+			};
+			name = Debug;
+		};
+		3FEA2407224332F40051ABCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "网络案例1-天气预报Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.----1-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/网络案例1-天气预报.app/网络案例1-天气预报";
+			};
+			name = Release;
+		};
+		3FEA2409224332F40051ABCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "网络案例1-天气预报UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.----1-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "网络案例1-天气预报";
+			};
+			name = Debug;
+		};
+		3FEA240A224332F40051ABCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "网络案例1-天气预报UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.----1-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "网络案例1-天气预报";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FEA23D1224332F30051ABCF /* Build configuration list for PBXProject "网络案例1-天气预报" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEA2400224332F40051ABCF /* Debug */,
+				3FEA2401224332F40051ABCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEA2402224332F40051ABCF /* Build configuration list for PBXNativeTarget "网络案例1-天气预报" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEA2403224332F40051ABCF /* Debug */,
+				3FEA2404224332F40051ABCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEA2405224332F40051ABCF /* Build configuration list for PBXNativeTarget "网络案例1-天气预报Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEA2406224332F40051ABCF /* Debug */,
+				3FEA2407224332F40051ABCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEA2408224332F40051ABCF /* Build configuration list for PBXNativeTarget "网络案例1-天气预报UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEA2409224332F40051ABCF /* Debug */,
+				3FEA240A224332F40051ABCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FEA23CE224332F30051ABCF /* Project object */;
+}
