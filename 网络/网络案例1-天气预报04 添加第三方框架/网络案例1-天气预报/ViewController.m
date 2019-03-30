@@ -10,6 +10,7 @@
 #import "Weather.h"
 #import "WeatherCell.h"
 #import "AFNetworking/AFNetworking.h"
+#import "MJRefresh/MJRefresh.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -38,7 +39,64 @@
     
     self.weatherTableView.tableFooterView = [[UIView alloc]init];
     
+    /**系统自带的下拉刷新
+     UIRefreshControl *refresh = [[UIRefreshControl alloc]init];
+     
+     [refresh addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
+     
+     refresh.attributedTitle =  [[NSAttributedString alloc]initWithString:@"正在加载"];
+     
+     self.weatherTableView.refreshControl = refresh;*/
+    
+    
+    //MJRefresh
+    //    self.weatherTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+    //
+    //
+    //
+    //    }];
+    
+    
+    MJRefreshNormalHeader *header =  [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)];
+    
+    // Set title
+    [header setTitle:@"下拉刷新" forState:MJRefreshStateIdle];
+    [header setTitle:@"可以松手" forState:MJRefreshStatePulling];
+    [header setTitle:@"Loading ..." forState:MJRefreshStateRefreshing];
+    
+    // Set font
+    header.stateLabel.font = [UIFont systemFontOfSize:15];
+    header.lastUpdatedTimeLabel.font = [UIFont systemFontOfSize:14];
+    
+    // Set textColor
+    header.stateLabel.textColor = [UIColor redColor];
+    header.lastUpdatedTimeLabel.textColor = [UIColor blueColor];
+    
+    self.weatherTableView.mj_header = header;
+    
+    
+    
     [self weather];
+}
+
+-(void)refreshData{
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [self weather];
+        
+        [self.weatherTableView.mj_header endRefreshing];
+        
+    });
+    
+    
+    //系统自带的下拉刷新结束
+    //    if (self.weatherTableView.refreshControl.isRefreshing) {
+    //
+    //        [self.weatherTableView.refreshControl endRefreshing];
+    //
+    //    }
+    
 }
 
 
@@ -92,9 +150,6 @@
                 [self.weathers addObject:w];
                 
             }
-            
-            
-            [NSThread  sleepForTimeInterval:1.0];
             
             //刷新界面
             [self.weatherTableView reloadData];

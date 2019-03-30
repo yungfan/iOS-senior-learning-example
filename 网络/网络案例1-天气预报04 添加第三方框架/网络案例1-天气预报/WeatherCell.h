@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *temperature;
 @property (weak, nonatomic) IBOutlet UILabel *wind;
 
+@property (weak, nonatomic) IBOutlet UIImageView *icon;
 @property (strong, nonatomic) Weather *w;
 
 @end

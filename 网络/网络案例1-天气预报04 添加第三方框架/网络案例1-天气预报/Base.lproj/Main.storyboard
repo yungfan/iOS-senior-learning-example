@@ -57,10 +57,15 @@
                                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain.png" translatesAutoresizingMaskIntoConstraints="NO" id="vht-6V-2Kc">
+                                                    <rect key="frame" x="331" y="11" width="48" height="45"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="date" destination="YAz-jE-vjt" id="rKU-RK-KQj"/>
+                                            <outlet property="icon" destination="vht-6V-2Kc" id="EHJ-m0-ued"/>
                                             <outlet property="temperature" destination="Huq-sc-scc" id="Mre-0T-MKF"/>
                                             <outlet property="weaher" destination="DvR-Zl-EtU" id="Azl-FS-ad0"/>
                                             <outlet property="wind" destination="DHz-pu-keg" id="iCq-fE-Uf8"/>
@@ -91,4 +96,7 @@
             <point key="canvasLocation" x="133.33333333333334" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rain.png" width="48" height="48"/>
+    </resources>
 </document>

@@ -7,6 +7,7 @@
 //
 
 #import "WeatherCell.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 
 @implementation WeatherCell
 
@@ -19,6 +20,10 @@
     self.date.text = [NSString stringWithFormat:@"%@  %@", w.date_y, w.week];
     
     
+    //通过SDWebImage加载图片
+    NSURL *url = [NSURL URLWithString:@"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1571140150,993479906&fm=26&gp=0.jpg"];
+    
+    [self.icon sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"rain"]];
 }
 
 @end
