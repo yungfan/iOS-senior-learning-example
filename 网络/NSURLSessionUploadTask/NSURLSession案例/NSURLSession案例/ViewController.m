@@ -32,7 +32,8 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
     //3、设置请求头
-    NSString *head = [NSString stringWithFormat:@"multipart/form-data;boundary=%--@", YFBoundary];
+//    NSString *head = [NSString stringWithFormat:@"multipart/form-data;boundary=%--@", YFBoundary];
+    NSString *head = [NSString stringWithFormat:@"multipart/form-data;boundary=%@", YFBoundary];
     [request setValue:head forHTTPHeaderField:@"Content-Type"];
     
  

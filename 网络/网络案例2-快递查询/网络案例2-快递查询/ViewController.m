@@ -34,6 +34,7 @@
     
     NSURL *url = [NSURL URLWithString:@"http://v.juhe.cn/exp/index?key=3aecda3a6394c64594b2790f6e1de257&com=sf&no=446505105190"];
     
+
     
     NSURLSession *session = [NSURLSession sharedSession];
     
@@ -52,7 +53,18 @@
             
             if (res.statusCode == 200) {
                 
-                NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+                /** NSJSONReadingOptions
+                 *    NSJSONReadingMutableContainers  = (1UL << 0),
+                 *    容器可变，NSMutableDictionary 或NSMutableArray。
+                 *
+                 *    NSJSONReadingMutableLeaves      = (1UL << 1),
+                 *    叶子可变，返回的 JSON 对象中字符串的值为 NSMutableString。
+                 *
+                 *    NSJSONReadingAllowFragments     = (1UL << 2)
+                 *    允许 JSON 字符串最外层既不是 NSArray 也不是 NSDictionary，但必须是有效的 JSON 片段
+                 */
+                
+                NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                 
                 
                 NSArray *list = dataDic[@"result"][@"list"];

@@ -300,6 +300,7 @@
 				AEE2C3581E6FF008000DA9CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

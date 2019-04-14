@@ -19,7 +19,7 @@
     
     [super viewDidLoad];
   
-    NSURL *url = [NSURL URLWithString:@"http://172.20.87.119:8080/iOS/UploadServlet"];
+    NSURL *url = [NSURL URLWithString:@"http://172.20.53.250:8080/AppTestAPI/UploadServlet"];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]initWithURL:url];
     
@@ -59,7 +59,7 @@
     // \r\n换行符
     [data appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
     // Content-Disposition: form-data; name="myfile"; filename="wall.jpg"
-    [data appendData:[@"Content-Disposition: form-data; name=\"myfile\"; filename=\"wall.jpg\"" dataUsingEncoding:NSUTF8StringEncoding]];
+    [data appendData:[@"Content-Disposition: form-data; name=\"myfile\"; filename=\"123.jpg\"" dataUsingEncoding:NSUTF8StringEncoding]];
     // \r\n换行符
     [data appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
     // Content-Type 上传文件的MIME
@@ -81,6 +81,11 @@
 //    NSData *imagedata2 = UIImagePNGRepresentation(image2);
 //    [data appendData:imagedata2];
 //    
+    
+    //如果上传的是zip压缩包
+    //NSString *path = [[NSBundle mainBundle] pathForResource:@"wall.zip" ofType:nil];
+    //[data appendData:[NSData dataWithContentsOfFile:path]];
+    
     
     // 两个换行符
     [data appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];

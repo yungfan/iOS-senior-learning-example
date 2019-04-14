@@ -18,6 +18,7 @@
     
     self.title.text = news.title;
     
+    //SDWebImage加载图片
     [self.cover sd_setImageWithURL:[NSURL URLWithString:news.cover] placeholderImage:[UIImage imageNamed:@"img"]];
 
 
