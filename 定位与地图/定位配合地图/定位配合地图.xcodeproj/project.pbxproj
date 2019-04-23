@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FCA7777226EECF40056EE9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA7776226EECF40056EE9C /* AppDelegate.m */; };
+		3FCA777A226EECF40056EE9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA7779226EECF40056EE9C /* ViewController.m */; };
+		3FCA777D226EECF40056EE9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA777B226EECF40056EE9C /* Main.storyboard */; };
+		3FCA777F226EECF40056EE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA777E226EECF40056EE9C /* Assets.xcassets */; };
+		3FCA7782226EECF40056EE9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA7780226EECF40056EE9C /* LaunchScreen.storyboard */; };
+		3FCA7785226EECF40056EE9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA7784226EECF40056EE9C /* main.m */; };
+		3FCA778F226EECF40056EE9C /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA778E226EECF40056EE9C /* ______Tests.m */; };
+		3FCA779A226EECF40056EE9C /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA7799226EECF40056EE9C /* ______UITests.m */; };
+		3FCA77A8226EED310056EE9C /* abc.edu.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA77A7226EED310056EE9C /* abc.edu.gpx */; };
+		3FCA77AB226EEF410056EE9C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCA77AA226EEF410056EE9C /* MapKit.framework */; };
+		3FCA77AE226EF16D0056EE9C /* WGS84ConvertToGCJ02ForAMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCA77AC226EF16D0056EE9C /* WGS84ConvertToGCJ02ForAMapView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FCA778B226EECF40056EE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FCA776A226EECF40056EE9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FCA7771226EECF40056EE9C;
+			remoteInfo = "定位配合地图";
+		};
+		3FCA7796226EECF40056EE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FCA776A226EECF40056EE9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FCA7771226EECF40056EE9C;
+			remoteInfo = "定位配合地图";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FCA7772226EECF40056EE9C /* 定位配合地图.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "定位配合地图.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCA7775226EECF40056EE9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3FCA7776226EECF40056EE9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3FCA7778226EECF40056EE9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3FCA7779226EECF40056EE9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3FCA777C226EECF40056EE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FCA777E226EECF40056EE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FCA7781226EECF40056EE9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FCA7783226EECF40056EE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCA7784226EECF40056EE9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FCA778A226EECF40056EE9C /* 定位配合地图Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "定位配合地图Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCA778E226EECF40056EE9C /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		3FCA7790226EECF40056EE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCA7795226EECF40056EE9C /* 定位配合地图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "定位配合地图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCA7799226EECF40056EE9C /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
+		3FCA779B226EECF40056EE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCA77A7226EED310056EE9C /* abc.edu.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = abc.edu.gpx; sourceTree = "<group>"; };
+		3FCA77AA226EEF410056EE9C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3FCA77AC226EF16D0056EE9C /* WGS84ConvertToGCJ02ForAMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84ConvertToGCJ02ForAMapView.m; sourceTree = "<group>"; };
+		3FCA77AD226EF16D0056EE9C /* WGS84ConvertToGCJ02ForAMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84ConvertToGCJ02ForAMapView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FCA776F226EECF40056EE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCA77AB226EEF410056EE9C /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCA7787226EECF40056EE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCA7792226EECF40056EE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FCA7769226EECF40056EE9C = {
+			isa = PBXGroup;
+			children = (
+				3FCA7774226EECF40056EE9C /* 定位配合地图 */,
+				3FCA778D226EECF40056EE9C /* 定位配合地图Tests */,
+				3FCA7798226EECF40056EE9C /* 定位配合地图UITests */,
+				3FCA7773226EECF40056EE9C /* Products */,
+				3FCA77A9226EEF400056EE9C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FCA7773226EECF40056EE9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FCA7772226EECF40056EE9C /* 定位配合地图.app */,
+				3FCA778A226EECF40056EE9C /* 定位配合地图Tests.xctest */,
+				3FCA7795226EECF40056EE9C /* 定位配合地图UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FCA7774226EECF40056EE9C /* 定位配合地图 */ = {
+			isa = PBXGroup;
+			children = (
+				3FCA77AD226EF16D0056EE9C /* WGS84ConvertToGCJ02ForAMapView.h */,
+				3FCA77AC226EF16D0056EE9C /* WGS84ConvertToGCJ02ForAMapView.m */,
+				3FCA77A7226EED310056EE9C /* abc.edu.gpx */,
+				3FCA7775226EECF40056EE9C /* AppDelegate.h */,
+				3FCA7776226EECF40056EE9C /* AppDelegate.m */,
+				3FCA7778226EECF40056EE9C /* ViewController.h */,
+				3FCA7779226EECF40056EE9C /* ViewController.m */,
+				3FCA777B226EECF40056EE9C /* Main.storyboard */,
+				3FCA777E226EECF40056EE9C /* Assets.xcassets */,
+				3FCA7780226EECF40056EE9C /* LaunchScreen.storyboard */,
+				3FCA7783226EECF40056EE9C /* Info.plist */,
+				3FCA7784226EECF40056EE9C /* main.m */,
+			);
+			path = "定位配合地图";
+			sourceTree = "<group>";
+		};
+		3FCA778D226EECF40056EE9C /* 定位配合地图Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3FCA778E226EECF40056EE9C /* ______Tests.m */,
+				3FCA7790226EECF40056EE9C /* Info.plist */,
+			);
+			path = "定位配合地图Tests";
+			sourceTree = "<group>";
+		};
+		3FCA7798226EECF40056EE9C /* 定位配合地图UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FCA7799226EECF40056EE9C /* ______UITests.m */,
+				3FCA779B226EECF40056EE9C /* Info.plist */,
+			);
+			path = "定位配合地图UITests";
+			sourceTree = "<group>";
+		};
+		3FCA77A9226EEF400056EE9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FCA77AA226EEF410056EE9C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FCA7771226EECF40056EE9C /* 定位配合地图 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCA779E226EECF40056EE9C /* Build configuration list for PBXNativeTarget "定位配合地图" */;
+			buildPhases = (
+				3FCA776E226EECF40056EE9C /* Sources */,
+				3FCA776F226EECF40056EE9C /* Frameworks */,
+				3FCA7770226EECF40056EE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "定位配合地图";
+			productName = "定位配合地图";
+			productReference = 3FCA7772226EECF40056EE9C /* 定位配合地图.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FCA7789226EECF40056EE9C /* 定位配合地图Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCA77A1226EECF40056EE9C /* Build configuration list for PBXNativeTarget "定位配合地图Tests" */;
+			buildPhases = (
+				3FCA7786226EECF40056EE9C /* Sources */,
+				3FCA7787226EECF40056EE9C /* Frameworks */,
+				3FCA7788226EECF40056EE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FCA778C226EECF40056EE9C /* PBXTargetDependency */,
+			);
+			name = "定位配合地图Tests";
+			productName = "定位配合地图Tests";
+			productReference = 3FCA778A226EECF40056EE9C /* 定位配合地图Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FCA7794226EECF40056EE9C /* 定位配合地图UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FCA77A4226EECF40056EE9C /* Build configuration list for PBXNativeTarget "定位配合地图UITests" */;
+			buildPhases = (
+				3FCA7791226EECF40056EE9C /* Sources */,
+				3FCA7792226EECF40056EE9C /* Frameworks */,
+				3FCA7793226EECF40056EE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FCA7797226EECF40056EE9C /* PBXTargetDependency */,
+			);
+			name = "定位配合地图UITests";
+			productName = "定位配合地图UITests";
+			productReference = 3FCA7795226EECF40056EE9C /* 定位配合地图UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FCA776A226EECF40056EE9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = student;
+				TargetAttributes = {
+					3FCA7771226EECF40056EE9C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3FCA7789226EECF40056EE9C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3FCA7771226EECF40056EE9C;
+					};
+					3FCA7794226EECF40056EE9C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3FCA7771226EECF40056EE9C;
+					};
+				};
+			};
+			buildConfigurationList = 3FCA776D226EECF40056EE9C /* Build configuration list for PBXProject "定位配合地图" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FCA7769226EECF40056EE9C;
+			productRefGroup = 3FCA7773226EECF40056EE9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FCA7771226EECF40056EE9C /* 定位配合地图 */,
+				3FCA7789226EECF40056EE9C /* 定位配合地图Tests */,
+				3FCA7794226EECF40056EE9C /* 定位配合地图UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FCA7770226EECF40056EE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCA7782226EECF40056EE9C /* LaunchScreen.storyboard in Resources */,
+				3FCA777F226EECF40056EE9C /* Assets.xcassets in Resources */,
+				3FCA77A8226EED310056EE9C /* abc.edu.gpx in Resources */,
+				3FCA777D226EECF40056EE9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCA7788226EECF40056EE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCA7793226EECF40056EE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FCA776E226EECF40056EE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCA777A226EECF40056EE9C /* ViewController.m in Sources */,
+				3FCA7785226EECF40056EE9C /* main.m in Sources */,
+				3FCA77AE226EF16D0056EE9C /* WGS84ConvertToGCJ02ForAMapView.m in Sources */,
+				3FCA7777226EECF40056EE9C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCA7786226EECF40056EE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCA778F226EECF40056EE9C /* ______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FCA7791226EECF40056EE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FCA779A226EECF40056EE9C /* ______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FCA778C226EECF40056EE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FCA7771226EECF40056EE9C /* 定位配合地图 */;
+			targetProxy = 3FCA778B226EECF40056EE9C /* PBXContainerItemProxy */;
+		};
+		3FCA7797226EECF40056EE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FCA7771226EECF40056EE9C /* 定位配合地图 */;
+			targetProxy = 3FCA7796226EECF40056EE9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FCA777B226EECF40056EE9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FCA777C226EECF40056EE9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FCA7780226EECF40056EE9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FCA7781226EECF40056EE9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FCA779C226EECF40056EE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3FCA779D226EECF40056EE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FCA779F226EECF40056EE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "定位配合地图/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FCA77A0226EECF40056EE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "定位配合地图/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FCA77A2226EECF40056EE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "定位配合地图Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/定位配合地图.app/定位配合地图";
+			};
+			name = Debug;
+		};
+		3FCA77A3226EECF40056EE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "定位配合地图Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/定位配合地图.app/定位配合地图";
+			};
+			name = Release;
+		};
+		3FCA77A5226EECF40056EE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "定位配合地图UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "定位配合地图";
+			};
+			name = Debug;
+		};
+		3FCA77A6226EECF40056EE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "定位配合地图UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.abc.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "定位配合地图";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FCA776D226EECF40056EE9C /* Build configuration list for PBXProject "定位配合地图" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCA779C226EECF40056EE9C /* Debug */,
+				3FCA779D226EECF40056EE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCA779E226EECF40056EE9C /* Build configuration list for PBXNativeTarget "定位配合地图" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCA779F226EECF40056EE9C /* Debug */,
+				3FCA77A0226EECF40056EE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCA77A1226EECF40056EE9C /* Build configuration list for PBXNativeTarget "定位配合地图Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCA77A2226EECF40056EE9C /* Debug */,
+				3FCA77A3226EECF40056EE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FCA77A4226EECF40056EE9C /* Build configuration list for PBXNativeTarget "定位配合地图UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FCA77A5226EECF40056EE9C /* Debug */,
+				3FCA77A6226EECF40056EE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FCA776A226EECF40056EE9C /* Project object */;
+}
