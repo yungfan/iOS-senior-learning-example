@@ -1,7 +1,0 @@
-platform :ios, '9.0'
-project '集成高德地图.xcodeproj'
-target '集成高德地图' do
-     pod 'AMapLocation'
-     pod 'AMap2DMap'
-     #     pod 'AMap3DMap'
-end
