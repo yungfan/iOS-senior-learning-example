@@ -21,13 +21,9 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>高的地图测试使用</string>
+	<string>高德地图测试使用</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>高的地图测试使用</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>location</string>
-	</array>
+	<string>高德地图测试使用</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

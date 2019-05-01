@@ -2,8 +2,8 @@
 //  main.m
 //  高德地图2019
 //
-//  Created by student on 2019/4/26.
-//  Copyright © 2019 student. All rights reserved.
+//  Created by 杨帆 on 2019/5/1.
+//  Copyright © 2019 杨帆. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -1,0 +1,30 @@
+PODS:
+  - AMap2DMap (5.6.1):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.5.6)
+  - AMapLocation (2.6.2):
+    - AMapFoundation (~> 1.4)
+  - AMapSearch (6.6.0):
+    - AMapFoundation (~> 1.4)
+
+DEPENDENCIES:
+  - AMap2DMap
+  - AMapLocation
+  - AMapSearch
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AMap2DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
+
+SPEC CHECKSUMS:
+  AMap2DMap: cac76bc057de18a1641f34df6b50bf5bc6b23571
+  AMapFoundation: 20fce2a12cd152e1092afdd04379cdac21932185
+  AMapLocation: 89a7e4eb6040d32ba73c77a4966ecc66e46aa7c3
+  AMapSearch: def5983c8ca1a6d7430970046dc814f6e337621d
+
+PODFILE CHECKSUM: 79474c14258beba37eae833ce0d940d5e6174de2
+
+COCOAPODS: 1.6.0.beta.2
