@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4C61B62275A579005218EE /* abc.edu.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3C4C61B52275A579005218EE /* abc.edu.gpx */; };
 		3FA17F632272D64D00FEC826 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA17F622272D64D00FEC826 /* AppDelegate.m */; };
 		3FA17F662272D64D00FEC826 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA17F652272D64D00FEC826 /* ViewController.m */; };
 		3FA17F692272D64D00FEC826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA17F672272D64D00FEC826 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C4C61B52275A579005218EE /* abc.edu.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = abc.edu.gpx; sourceTree = "<group>"; };
 		3FA17F5E2272D64D00FEC826 /* 地图自定义标注.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "地图自定义标注.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA17F612272D64D00FEC826 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FA17F622272D64D00FEC826 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		3FA17F602272D64D00FEC826 /* 地图自定义标注 */ = {
 			isa = PBXGroup;
 			children = (
+				3C4C61B52275A579005218EE /* abc.edu.gpx */,
 				3FA17F962272D6AF00FEC826 /* MyAnnotation.h */,
 				3FA17F972272D6AF00FEC826 /* MyAnnotation.m */,
 				3FA17F612272D64D00FEC826 /* AppDelegate.h */,
@@ -254,6 +257,7 @@
 			files = (
 				3FA17F6E2272D64F00FEC826 /* LaunchScreen.storyboard in Resources */,
 				3FA17F6B2272D64F00FEC826 /* Assets.xcassets in Resources */,
+				3C4C61B62275A579005218EE /* abc.edu.gpx in Resources */,
 				3FA17F692272D64D00FEC826 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

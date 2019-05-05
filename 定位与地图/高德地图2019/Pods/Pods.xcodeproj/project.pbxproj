@@ -16,6 +16,7 @@
 				2DC2DB3B4A1A85F653A62C945ECBA549 /* PBXTargetDependency */,
 			);
 			name = AMapSearch;
+			productName = AMapSearch;
 		};
 		3DC604DB963F57BA595AAA5B9C875467 /* AMapLocation */ = {
 			isa = PBXAggregateTarget;
@@ -26,6 +27,7 @@
 				A3BD2F257188EDF0B22EC29C6E05880D /* PBXTargetDependency */,
 			);
 			name = AMapLocation;
+			productName = AMapLocation;
 		};
 		CA8DA0D314F2CF5709EA1DD0D7506B21 /* AMapFoundation */ = {
 			isa = PBXAggregateTarget;
@@ -35,6 +37,7 @@
 			dependencies = (
 			);
 			name = AMapFoundation;
+			productName = AMapFoundation;
 		};
 		E4580EE7938F4CBADE513EDD450378BE /* AMap2DMap */ = {
 			isa = PBXAggregateTarget;
@@ -45,6 +48,7 @@
 				F66243753AA5E205AEDDA677386C3D61 /* PBXTargetDependency */,
 			);
 			name = AMap2DMap;
+			productName = AMap2DMap;
 		};
 /* End PBXAggregateTarget section */
 
@@ -61,6 +65,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = E4580EE7938F4CBADE513EDD450378BE;
 			remoteInfo = AMap2DMap;
+		};
+		3CBC28BE227F08B00051B4D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CBC28B8227F08B00051B4D0 /* 高德地图2019.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C5BE1A0227939D4004E5866;
+			remoteInfo = "高德地图2019";
+		};
+		3CBC28C0227F08B00051B4D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CBC28B8227F08B00051B4D0 /* 高德地图2019.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C5BE1B8227939D4004E5866;
+			remoteInfo = "高德地图2019Tests";
+		};
+		3CBC28C2227F08B00051B4D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CBC28B8227F08B00051B4D0 /* 高德地图2019.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C5BE1C3227939D5004E5866;
+			remoteInfo = "高德地图2019UITests";
 		};
 		5CC6D5B3126ED12D47428B39B34FC0ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -134,10 +159,11 @@
 		27C64C47F4AFD374A2EF1A4EA76616E5 /* AMapURLSearchConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapURLSearchConfig.h; path = AMapFoundationKit.framework/Headers/AMapURLSearchConfig.h; sourceTree = "<group>"; };
 		300C404FADD3756478878757206F8B49 /* MAGroundOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGroundOverlayView.h; path = MAMapKit.framework/Headers/MAGroundOverlayView.h; sourceTree = "<group>"; };
 		33BC313E597D4FBD0449BDA0FA8469F9 /* MAGroundOverlayRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGroundOverlayRenderer.h; path = MAMapKit.framework/Headers/MAGroundOverlayRenderer.h; sourceTree = "<group>"; };
-		345B0EB09BC82B9F1FA405EE173A1ACD /* libPods-高德地图2019.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-高德地图2019.a"; path = "libPods-高德地图2019.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		345B0EB09BC82B9F1FA405EE173A1ACD /* libPods-高德地图2019.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-高德地图2019.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BC786877C86390186F1BC9FA18FE3F /* AMapNearbySearchManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNearbySearchManager.h; path = AMapSearchKit.framework/Headers/AMapNearbySearchManager.h; sourceTree = "<group>"; };
 		355ACAB88EC02FE32897425170DEEF8D /* NSMutableDictionary+AMapSafe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+AMapSafe.h"; path = "AMapFoundationKit.framework/Headers/NSMutableDictionary+AMapSafe.h"; sourceTree = "<group>"; };
 		3575BD72D39FC79C88543076C181142E /* MAAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAAnnotationView.h; path = MAMapKit.framework/Headers/MAAnnotationView.h; sourceTree = "<group>"; };
+		3CBC28B8227F08B00051B4D0 /* 高德地图2019.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "高德地图2019.xcodeproj"; path = "../高德地图2019.xcodeproj"; sourceTree = "<group>"; };
 		3F486BEDCA62C1FC062776F4798C50F8 /* AMap2DMap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMap2DMap.xcconfig; sourceTree = "<group>"; };
 		3FDC07B62D8604E8FBD4E8973D5B6391 /* MAPinAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPinAnnotationView.h; path = MAMapKit.framework/Headers/MAPinAnnotationView.h; sourceTree = "<group>"; };
 		3FF621223515B5EFEAA649FED2B85D06 /* AMapURLSearchType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapURLSearchType.h; path = AMapFoundationKit.framework/Headers/AMapURLSearchType.h; sourceTree = "<group>"; };
@@ -155,7 +181,7 @@
 		593F4FB9D745B95868DB3C2F76B178FF /* Pods-高德地图2019Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-高德地图2019Tests-dummy.m"; sourceTree = "<group>"; };
 		5F87B1BBB7579DE0FAACB60E6E0597F7 /* Pods-高德地图2019UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-高德地图2019UITests.release.xcconfig"; sourceTree = "<group>"; };
 		621B87A97F903324B85F7F060736E220 /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
-		63F4FEA6003E138AA95AA081E4EA8DC9 /* libPods-高德地图2019UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-高德地图2019UITests.a"; path = "libPods-高德地图2019UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F4FEA6003E138AA95AA081E4EA8DC9 /* libPods-高德地图2019UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-高德地图2019UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		655AF6C84D12A8A8006E2BFEF640C63B /* MAShape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAShape.h; path = MAMapKit.framework/Headers/MAShape.h; sourceTree = "<group>"; };
 		6686EB81968D7FBAB5E0651712C4DF91 /* MATileOverlayRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MATileOverlayRenderer.h; path = MAMapKit.framework/Headers/MATileOverlayRenderer.h; sourceTree = "<group>"; };
 		668EF26E180EDFB9F3DB5A15BC09D97E /* AMapNearbyUploadInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapNearbyUploadInfo.h; path = AMapSearchKit.framework/Headers/AMapNearbyUploadInfo.h; sourceTree = "<group>"; };
@@ -173,7 +199,7 @@
 		7BC7F93662E0A3211F3458EA31FE3ACE /* MAUserLocationRepresentation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAUserLocationRepresentation.h; path = MAMapKit.framework/Headers/MAUserLocationRepresentation.h; sourceTree = "<group>"; };
 		7DDD6918560988FB107D8C60957488D7 /* AMapSearchKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMapSearchKit.h; path = AMapSearchKit.framework/Headers/AMapSearchKit.h; sourceTree = "<group>"; };
 		8B28BAE6E77C70945368CCCF6065F3DE /* Pods-高德地图2019-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-高德地图2019-dummy.m"; sourceTree = "<group>"; };
-		8D990D2EF8E4DDBBC2897A2B25C4DC68 /* libPods-高德地图2019Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-高德地图2019Tests.a"; path = "libPods-高德地图2019Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D990D2EF8E4DDBBC2897A2B25C4DC68 /* libPods-高德地图2019Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-高德地图2019Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1CCDABAAA04981E1383E49613CE660 /* AMapLocation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AMapLocation.xcconfig; sourceTree = "<group>"; };
 		9017D45D0042D56A8FF11F1C3E7D561B /* Pods-高德地图2019Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-高德地图2019Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9033DAED381ADDF0C96FC7B9D77B87B5 /* MAGeodesicPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAGeodesicPolyline.h; path = MAMapKit.framework/Headers/MAGeodesicPolyline.h; sourceTree = "<group>"; };
@@ -181,7 +207,7 @@
 		94B2A212240655B67B3CE9DD7F862757 /* AMap.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
 		95511486C4E9CF9E9AD4B01165B06B4F /* MAMultiColoredPolylineRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMultiColoredPolylineRenderer.h; path = MAMapKit.framework/Headers/MAMultiColoredPolylineRenderer.h; sourceTree = "<group>"; };
 		9CACFC1AA121F9EB47F8A6EE8184646B /* MAPolygonRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAPolygonRenderer.h; path = MAMapKit.framework/Headers/MAPolygonRenderer.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F20CD61E8981595A91C88924D6A1D96 /* MAMapKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMapKit.h; path = MAMapKit.framework/Headers/MAMapKit.h; sourceTree = "<group>"; };
 		9F84E751185EEB8FE5C2F332FBB816A6 /* MAMultiPolyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MAMultiPolyline.h; path = MAMapKit.framework/Headers/MAMultiPolyline.h; sourceTree = "<group>"; };
 		A11B760CB77FBE8D7B216A8136532E61 /* NSObject+AMapJsonSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AMapJsonSerialization.h"; path = "AMapFoundationKit.framework/Headers/NSObject+AMapJsonSerialization.h"; sourceTree = "<group>"; };
@@ -255,6 +281,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		3CBC28B9227F08B00051B4D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CBC28BF227F08B00051B4D0 /* 高德地图2019.app */,
+				3CBC28C1227F08B00051B4D0 /* 高德地图2019Tests.xctest */,
+				3CBC28C3227F08B00051B4D0 /* 高德地图2019UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4A7620A91D77FAB9268ABC7FE3ADD791 /* AMapSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,7 +305,6 @@
 				0671079F843CFF2A7AE4EA64620B179C /* Frameworks */,
 				D8F933ED49178C826E94743556A0F7A9 /* Support Files */,
 			);
-			name = AMapSearch;
 			path = AMapSearch;
 			sourceTree = "<group>";
 		};
@@ -295,7 +330,6 @@
 				9E7B36CBC61FCB85221CC02BF30D1210 /* Frameworks */,
 				DF516A7A489110E38587237C9DDC3D4F /* Support Files */,
 			);
-			name = AMapLocation;
 			path = AMapLocation;
 			sourceTree = "<group>";
 		};
@@ -315,7 +349,6 @@
 				4CBD9B8872E585D0BDCA0F0711BDA05F /* Frameworks */,
 				9369E087AF8E83B0A0725D86BFF12341 /* Support Files */,
 			);
-			name = AMapFoundation;
 			path = AMapFoundation;
 			sourceTree = "<group>";
 		};
@@ -362,7 +395,6 @@
 				3CAD9A31E694EE1F6EAA0F3A13924387 /* Resources */,
 				CB4C18DFADC56867038E5BDE433EDDBB /* Support Files */,
 			);
-			name = AMap2DMap;
 			path = AMap2DMap;
 			sourceTree = "<group>";
 		};
@@ -447,6 +479,7 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
+				3CBC28B8227F08B00051B4D0 /* 高德地图2019.xcodeproj */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				A7C19E88B835B6B9CF98C40240DA554D /* Pods */,
@@ -598,11 +631,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -610,6 +643,12 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = AF646032673AF489A3ACEDE772F5CAA4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3CBC28B9227F08B00051B4D0 /* Products */;
+					ProjectRef = 3CBC28B8227F08B00051B4D0 /* 高德地图2019.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E4580EE7938F4CBADE513EDD450378BE /* AMap2DMap */,
@@ -622,6 +661,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3CBC28BF227F08B00051B4D0 /* 高德地图2019.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "高德地图2019.app";
+			remoteRef = 3CBC28BE227F08B00051B4D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CBC28C1227F08B00051B4D0 /* 高德地图2019Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "高德地图2019Tests.xctest";
+			remoteRef = 3CBC28C0227F08B00051B4D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CBC28C3227F08B00051B4D0 /* 高德地图2019UITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "高德地图2019UITests.xctest";
+			remoteRef = 3CBC28C2227F08B00051B4D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20A9C6CDEB1443F15F238B1F6C2B4BD7 /* Sources */ = {
@@ -712,10 +775,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F486BEDCA62C1FC062776F4798C50F8 /* AMap2DMap.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -729,10 +791,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C2D6A69C0A7FD107D41524D656D0D0B9 /* AMapSearch.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -746,10 +807,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F1CCDABAAA04981E1383E49613CE660 /* AMapLocation.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -763,10 +823,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C2D6A69C0A7FD107D41524D656D0D0B9 /* AMapSearch.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -781,6 +840,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -841,10 +901,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F271946B8F0CF9550A0228C945474FF9 /* AMapFoundation.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -858,10 +917,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F271946B8F0CF9550A0228C945474FF9 /* AMapFoundation.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -877,7 +935,6 @@
 			baseConfigurationReference = 0FF1B4C9DDCA492E51AFFF73AB737ECC /* Pods-高德地图2019Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -900,7 +957,6 @@
 			baseConfigurationReference = A6A996BCAA1480A0E1DC5B29C0B836BE /* Pods-高德地图2019.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -922,10 +978,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F1CCDABAAA04981E1383E49613CE660 /* AMapLocation.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -940,10 +995,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F486BEDCA62C1FC062776F4798C50F8 /* AMap2DMap.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -958,6 +1012,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1023,7 +1078,6 @@
 			baseConfigurationReference = D7A2923103E2678A2AF22F579035EF16 /* Pods-高德地图2019.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1047,7 +1101,6 @@
 			baseConfigurationReference = 5F87B1BBB7579DE0FAACB60E6E0597F7 /* Pods-高德地图2019UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1071,7 +1124,6 @@
 			baseConfigurationReference = AD92C162DFC7E323F27E1CCA20888D45 /* Pods-高德地图2019Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1095,7 +1147,6 @@
 			baseConfigurationReference = FBF466737E39EAED592F6769B21FFE7E /* Pods-高德地图2019UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FEE8C86225C7E6B00C1A5AD /* abc.edu.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3FEE8C85225C7E6B00C1A5AD /* abc.edu.gpx */; };
 		AE6769EE1E975C0500B0D303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6769ED1E975C0500B0D303 /* main.m */; };
 		AE6769F11E975C0500B0D303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6769F01E975C0500B0D303 /* AppDelegate.m */; };
 		AE6769F41E975C0500B0D303 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6769F31E975C0500B0D303 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FEE8C85225C7E6B00C1A5AD /* abc.edu.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = abc.edu.gpx; sourceTree = "<group>"; };
 		AE6769E91E975C0500B0D303 /* 定位.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "定位.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6769ED1E975C0500B0D303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE6769EF1E975C0500B0D303 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		AE6769EB1E975C0500B0D303 /* 定位 */ = {
 			isa = PBXGroup;
 			children = (
+				3FEE8C85225C7E6B00C1A5AD /* abc.edu.gpx */,
 				AE6769EF1E975C0500B0D303 /* AppDelegate.h */,
 				AE6769F01E975C0500B0D303 /* AppDelegate.m */,
 				AE6769F21E975C0500B0D303 /* ViewController.h */,
@@ -144,6 +147,7 @@
 			files = (
 				AE6769FC1E975C0500B0D303 /* LaunchScreen.storyboard in Resources */,
 				AE6769F91E975C0500B0D303 /* Assets.xcassets in Resources */,
+				3FEE8C86225C7E6B00C1A5AD /* abc.edu.gpx in Resources */,
 				AE6769F71E975C0500B0D303 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

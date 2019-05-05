@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,42 +18,9 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HDp-qE-uzy">
-                                <rect key="frame" x="8" y="8" width="584" height="1336"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">        安徽商贸职业技术学院是2000年经省政府批准、教育部备案，由百年老校——安徽省商业学校和安徽商业职工大学合并建立的公办全日制专科层次的高等职业院校，隶属于安徽省教育厅。学院秉承“厚德 弘商 笃学 砺能”校训，不断发扬“创新超越 诚信图强”的安商精神，励精图治，改革创新，办学水平与人才培养质量不断提高，百年老校焕发出新的生机与活力。2008年被省教育厅、财政厅确定为首批“安徽省示范性高等职业院校”立项建设单位，2010年被教育部、财政部确定为国家骨干高职院校立项建设单位，2014年以“优秀”等级通过教育部、财政部验收，2015年荣获安徽省高职高专人才培养水平评估“优秀”等次，2015年被列入安徽省高校综合改革首批试点院校，2015年被确立为安徽省首批地方技能型高水平大学立项建设单位。
-
-　　学院坐落于长江之畔的历史名城芜湖，占地面积44.92万平方米，校舍建筑面积23.02万平方米，图书馆藏书77.24万册，办学条件优良，基础设施完善，达到省内同类院校一流水平。学院现有全日制在校生11000余人。在职教职工600余人，专职教师中具有教授、副教授职称的120余人，具有各类技术职称、资质和考评员资格的430余人，“双师”素质专业教师占专业课教师总数90%以上，来自企业一线的兼职教师达300余人；拥有省级教学团队9个、省级教学名师8人、省级及以上优秀教师8人、省级专业带头人13人、省级教坛新秀11人，获省部级表彰优秀教师17人次。获得国家级教学成果二等奖1项，省级教学成果奖46项；先后承担省部级教科研课题100余项，主持建设2门国家教学资源库课程，参与3门。教职工在省级以上刊物公开发表论文2000多篇；出版教材、专著600余部，其中国家级精品教材1本，国家“十一五”规划教材9本、“十二五”规划教材23本，安徽省“十一五”规划教材18本、“十二五”规划教材21本。《安徽商贸职业技术学院学报（社会科学版）》两次荣获全国优秀社科学报，并入选“武汉大学中国科学评价研究中心（RCCSE）核心学术期刊”。
-
-　　学院目前设有会计系、经济贸易系、财务金融系、工商管理系、电子信息工程系、艺术设计系、人文外语系、思想政治理论课教学部和体育教学部等9个教学系部36个专业，其中国家级重点建设专业7个、省级特色专业 12 个、省级综合改革试点专业14个，市场营销专业为国家级教学改革试点专业，物流管理、市场营销、计算机信息管理、动画设计为国家骨干高职院校重点建设专业，会计电算化、连锁经营管理为中央财政支持提升专业服务产业发展能力建设项目专业。拥有省级精品课程、精品开放课程和大规模在线开放课程（MOOC）示范项目44个，其中省级精品视频公开课2门，省级大规模在线开放课程（MOOC）示范项目27项。
-
-　　学院积极创新工学结合人才培养模式，着力培养现代服务业高素质技术技能人才。在成立校企合作理事会的基础上，学院与成员单位和知名企业深化合作，形成了学校与行业、专业与企业、学校指导老师与企业指导教师“三层次双元”校企合作长效机制，催生了以“迪科金服学院”、“松鼠班”、“顺丰班”、“江南梦工场影视工作室”、“艺术设计系三站两室一坊”等为代表的校企深度融合的优秀实例，走出了一条具有引领和示范效应的校企合作办学之路。学院目前建有设备先进、配套齐全的校内实训基地96个，其中物流管理实训基地为中央财政重点支持的国家高职高专实训基地，计算机应用实训中心、现代物流管理实训中心、会计实训中心、安徽商贸-上海晓庄校园实训基地为省级示范实验实训中心，多媒体设计与制作（动画方向）为省级校企合作人才培养模式创新试验区；建立三只松鼠集团、浙江人本超市有限公司、合肥荣事达电子电器集团、芜湖本源财务咨询有限公司等校企合作紧密的校外实训基地159个，形成了融教学、培训、教科研、技能鉴定与技术开发和服务于一体的校内外实习实训体系。
-
-　　学院具有完善的学生奖助体系。学生奖学金覆盖面高达40%；此外还设有国家奖学金、国家励志奖学金、国家助学金、柏林奖助学金、李健奖助学金、纬纶奖助学金评、恒生奖学金、天翼奖学金、临时生活困难补助、学费减免、勤工俭学等学生资助项目。
-
-　　学院坚持服务社会，积极为地方经济建设提供人才智力支撑，在省内较早设有国家职业技能鉴定所，并作为芜湖市人力资源和社会保障局指定的唯一考点，承担芜湖市国家级、省级职业技能鉴定考试工作，鉴定工种31个，充分满足了面向社会开展电子商务师、物流师、计算机程序设计员、制图员、电子设备装接工、秘书、人力资源管理师等工种的职业技能培训及鉴定需要。同时依托各类培训基地，为企业员工、进城务工人员、农村转移劳动力培训等提供社会培训服务，年完成职业技能鉴定与考试10000多人次，年举办各级各类培训班60多个，考试培训达25000人次以上，为推动地方社会经济发展做出了积极贡献。
-
-　　学院不断提升办学国际化水平，先后与美国、英国、韩国和我国台湾地区多所高校建立了良好的合作与交流关系，与英国南埃塞克斯学院开展合作办学项目，合作培养专科专业学生和“3+1”专升本等项目；与台湾南台科技大学、台湾朝阳科技大学开展互派交换生合作项目，为拓宽技能人才培养空间，培养具有国际化视野的专业人才创造了良好条件。
-
-　　学院积极倡导以职业素质为重点的全面素质教育，办学模式和人才培养模式得到同行的认可和社会的好评，毕业生深受用人单位欢迎，毕业生就业率一直保持在98%以上，2004年至2006年连续3年获得“安徽省普通高等院校毕业就业工作先进集体”称号，2007年至2012年连续6年获得“安徽省普通高等院校毕业生就业工作标兵单位”称号。2009年获“全国普通高等学校毕业生就业工作先进集体”荣誉称号，是安徽省唯一获表彰的高职院校。2012年被评为“安徽省普通高校大学生创新创业教育示范校”。2015年荣获“全国毕业生就业典型经验高校”称号，成为全国50所获此殊荣的高校之一，也是安徽省唯一入选的高职院校。
-
-　　学院目前是教育部商业职业教育指导委员会副主任委员单位、全国商业高职教育研究会副会长单位，安徽省商业经济学会副会长单位，安徽省商科高职院校与企业合作教育联盟首轮轮值主席单位。
-
-　　当前，学院把握国家加快发展现代职业教育的重要机遇，主动适应国家经济发展方式转变和产业优化升级的要求，坚持“以服务为宗旨，以就业为导向，以产学研结合为途径，以社会评价为标准，以培养现代服务业高素质技能型专门人才为目标”的办学理念，按照“育人为本、特色发展、商贸为主、服务社会”的办学思路，实施“品牌立校、人才强校、民主治校、文化育校、和谐兴校”的发展战略，推动内涵发展，增强办学活力，提升办学水平，正向着建设规模适度、结构合理、特色鲜明、在国内具有较高知名度和影响力的地方技能型高水平大学阔步前进。</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="HDp-qE-uzy" secondAttribute="trailing" constant="8" id="Lcc-nz-IUx"/>
-                            <constraint firstItem="HDp-qE-uzy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="U5s-yF-tsy"/>
-                            <constraint firstItem="HDp-qE-uzy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="iAE-Wv-TY0"/>
-                            <constraint firstAttribute="bottom" secondItem="HDp-qE-uzy" secondAttribute="bottom" constant="8" id="mcy-0h-Ph1"/>
-                        </constraints>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

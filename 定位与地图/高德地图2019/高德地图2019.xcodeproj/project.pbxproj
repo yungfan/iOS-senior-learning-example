@@ -277,7 +277,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3C5BE19B227939D4004E5866 /* Build configuration list for PBXProject "高德地图2009" */;
+			buildConfigurationList = 3C5BE19B227939D4004E5866 /* Build configuration list for PBXProject "高德地图2019" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -699,7 +699,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3C5BE19B227939D4004E5866 /* Build configuration list for PBXProject "高德地图2009" */ = {
+		3C5BE19B227939D4004E5866 /* Build configuration list for PBXProject "高德地图2019" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3C5BE1CA227939D5004E5866 /* Debug */,

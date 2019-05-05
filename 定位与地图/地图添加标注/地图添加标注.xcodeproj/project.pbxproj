@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4C61B42275A55A005218EE /* abc.edu.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3C4C61B32275A55A005218EE /* abc.edu.gpx */; };
 		3FF3FB7322714DFB00C4383E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3FB7222714DFB00C4383E /* AppDelegate.m */; };
 		3FF3FB7622714DFB00C4383E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3FB7522714DFB00C4383E /* ViewController.m */; };
 		3FF3FB7922714DFB00C4383E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF3FB7722714DFB00C4383E /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C4C61B32275A55A005218EE /* abc.edu.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = abc.edu.gpx; sourceTree = "<group>"; };
 		3FF3FB6E22714DFB00C4383E /* 地图添加标注.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "地图添加标注.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF3FB7122714DFB00C4383E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FF3FB7222714DFB00C4383E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		3FF3FB7022714DFB00C4383E /* 地图添加标注 */ = {
 			isa = PBXGroup;
 			children = (
+				3C4C61B32275A55A005218EE /* abc.edu.gpx */,
 				3FF3FB7122714DFB00C4383E /* AppDelegate.h */,
 				3FF3FB7222714DFB00C4383E /* AppDelegate.m */,
 				3FF3FB7422714DFB00C4383E /* ViewController.h */,
@@ -254,6 +257,7 @@
 			files = (
 				3FF3FB7E22714DFC00C4383E /* LaunchScreen.storyboard in Resources */,
 				3FF3FB7B22714DFC00C4383E /* Assets.xcassets in Resources */,
+				3C4C61B42275A55A005218EE /* abc.edu.gpx in Resources */,
 				3FF3FB7922714DFB00C4383E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

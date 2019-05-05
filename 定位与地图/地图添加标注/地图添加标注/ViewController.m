@@ -41,7 +41,7 @@
 }
 
 
-//点击地图的任一位置 都可以插入一个大头针，大头针的标题和副标题显示的是大头针的具体位置
+//点击地图的任一位置 都可以插入一个标注，标注的标题和副标题显示的是具体位置
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     

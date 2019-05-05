@@ -46,8 +46,9 @@
 
 
 //如何通过定位到的位置 设置地图的“缩放级别”?
+//通过设置地图的MKCoordinateRegion达到，这里有两种方案
 
-
+//方案一
 //如果是通过CLLocationManagerDelegate必须进行坐标的转换
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
 
@@ -77,7 +78,7 @@
     
 }
 
-
+//方案二 推荐使用
 //如果是通过MKMapViewDelegate不需要进行坐标的转换
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
     
