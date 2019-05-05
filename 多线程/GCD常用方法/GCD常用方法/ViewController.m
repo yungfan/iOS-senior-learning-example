@@ -92,7 +92,7 @@
         NSLog(@"执行任务4");
     });
     
-    
+    //使用 dispatch_barrier_async ，该函数只能搭配自定义并行队列 dispatch_queue_t 使用。不能使用： dispatch_get_global_queue 
     dispatch_barrier_async(queue, ^{
         NSLog(@"我是分界线");
     });
