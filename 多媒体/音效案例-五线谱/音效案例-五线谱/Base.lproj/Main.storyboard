@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gb0-2k-Izd">
+                                <rect key="frame" x="20" y="106" width="374" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kye-LO-fVt" appends="YES" id="Bxm-Rg-i4p"/>
+                                </connections>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vl-7N-9T9">
+                                <rect key="frame" x="20" y="213" width="374" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="a0z-DF-qm2" appends="YES" id="m4y-3d-ugY"/>
+                                </connections>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6q-OS-Lm8">
+                                <rect key="frame" x="20" y="317" width="374" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="findHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gC8-rm-Fom" appends="YES" id="FKh-YB-cRc"/>
+                                </connections>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pkh-8c-y2b">
+                                <rect key="frame" x="20" y="424" width="374" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22125342810000001" green="1" blue="0.19055909469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Km4-hU-O1o" appends="YES" id="9WY-6U-eno"/>
+                                </connections>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HR-5o-pBI">
+                                <rect key="frame" x="20" y="531" width="374" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.3875679011" blue="0.22941198530000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1Qj-1b-pmx" appends="YES" id="4TC-GG-fXp"/>
+                                </connections>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nBS-Bx-hlW">
+                                <rect key="frame" x="20" y="638" width="374" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98882576909999997" green="0.2470772872" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f5Z-ux-ptL" appends="YES" id="eh3-Xg-mqT"/>
+                                </connections>
+                            </view>
+                            <view tag="7" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Q7-J8-NxI">
+                                <rect key="frame" x="20" y="741" width="374" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mOm-wX-Pmk" appends="YES" id="EHH-DM-OjP"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kye-LO-fVt">
+                    <connections>
+                        <action selector="tapClick:" destination="BYZ-38-t0r" id="mow-0z-lox"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="a0z-DF-qm2">
+                    <connections>
+                        <action selector="tapClick:" destination="BYZ-38-t0r" id="ReX-9k-xDT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gC8-rm-Fom">
+                    <connections>
+                        <action selector="tapClick:" destination="BYZ-38-t0r" id="gU0-Rx-oUr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Km4-hU-O1o">
+                    <connections>
+                        <action selector="tapClick:" destination="BYZ-38-t0r" id="Fkx-z5-GCj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1Qj-1b-pmx">
+                    <connections>
+                        <action selector="tapClick:" destination="BYZ-38-t0r" id="ABU-vf-0ho"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="f5Z-ux-ptL">
+                    <connections>
+                        <action selector="tapClick:" destination="BYZ-38-t0r" id="RBq-9H-NC1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mOm-wX-Pmk">
+                    <connections>
+                        <action selector="tapClick:" destination="BYZ-38-t0r" id="dzF-a1-bnD"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
