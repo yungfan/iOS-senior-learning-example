@@ -2,8 +2,8 @@
 //  AVAudioPlayer______Tests.m
 //  AVAudioPlayer播放本地音乐Tests
 //
-//  Created by student on 2018/5/21.
-//  Copyright © 2018年 student. All rights reserved.
+//  Created by student on 2019/5/9.
+//  Copyright © 2019 student. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
@@ -15,13 +15,11 @@
 @implementation AVAudioPlayer______Tests
 
 - (void)setUp {
-    [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
 }
 
 - (void)testExample {
