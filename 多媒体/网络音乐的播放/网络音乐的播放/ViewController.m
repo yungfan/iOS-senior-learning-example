@@ -21,8 +21,6 @@
 
 @property(nonatomic, strong) AVPlayer *player;
 @property(nonatomic, assign) NSInteger index;
-
-
 @property(nonatomic, strong) NSArray *music;
 
 @end
@@ -35,21 +33,15 @@
     
     self.music = @[
                    
-                   @"http://up.mcyt.net/?down/46969.mp3",
-                   @"http://up.mcyt.net/?down/46973.mp3",
-                   @"http://up.mcyt.net/?down/46960.mp3",
-                   @"http://up.mcyt.net/?down/46954.mp3"
+                   @"http://www.ytmp3.cn/down/73111.mp3",
+                   @"http://www.ytmp3.cn/down/73072.mp3",
+                   @"http://win.web.nf01.sycdn.kuwo.cn/8f0f74aa723cd6788d53553cdd252c86/5cd2f0cd/resource/n1/49/87/2328810103.mp3",
+                   @"http://www.ytmp3.cn/down/73053.mp3"
                    
                    ];
     
     self.index = 0;
     
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -63,10 +55,24 @@
     AVPlayerItem *item = [[AVPlayerItem alloc]initWithURL:url];
     
     AVPlayer *player = [[AVPlayer alloc]initWithPlayerItem:item];
-    
+
     self.player = player;
     
     [self.player play];
+    
+    //打印播放时长与总时长
+    [NSTimer scheduledTimerWithTimeInterval:1.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        
+        //准备播放的时候开始打印
+        if (self.player.status == AVPlayerStatusReadyToPlay && self.player.currentItem.duration.timescale != 0) {
+            
+            
+            //CMTime value/timescale 得到秒
+            NSLog(@"%当前播放：lld -- 总时长：%lld", self.player.currentTime.value/self.player.currentTime.timescale, self.player.currentItem.duration.value/self.player.currentItem.duration.timescale) ;
+        }
+        
+        
+    }];
 }
 
 - (IBAction)pause:(id)sender {
@@ -81,7 +87,7 @@
     AVPlayerItem *item = [[AVPlayerItem alloc]initWithURL:url];
     
     [self.player replaceCurrentItemWithPlayerItem:item];
-    
+
 }
 
 //上一首 注意数组边界问题
