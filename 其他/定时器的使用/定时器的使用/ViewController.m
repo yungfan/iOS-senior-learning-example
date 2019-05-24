@@ -28,7 +28,9 @@
     self.count = 3;
     
     
-   
+    //UIButton按钮在更新文字的时候闪烁的解决办法一
+    //[UIView setAnimationsEnabled:NO];
+    //UIButton按钮在更新文字的时候闪烁的解决办法二：按钮改成custom
 }
 
 -(void)viewDidAppear:(BOOL)animated{
