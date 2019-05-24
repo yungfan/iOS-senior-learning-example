@@ -170,8 +170,7 @@
 
 
 /// 新增API,获取录音权限. 返回值,YES为无拒绝,NO为拒绝录音.
-- (BOOL)canRecord
-{
+- (BOOL)canRecord {
     __block BOOL bCanRecord = YES;
     if ([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0) {
         AVAudioSession *audioSession = [AVAudioSession sharedInstance];
