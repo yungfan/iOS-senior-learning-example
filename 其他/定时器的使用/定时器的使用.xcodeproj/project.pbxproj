@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3F595AFD2297C83200AAA801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F595AFC2297C83200AAA801 /* AppDelegate.m */; };
-		3F595B002297C83200AAA801 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F595AFF2297C83200AAA801 /* ViewController.m */; };
+		3F595B002297C83200AAA801 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F595AFF2297C83200AAA801 /* TimerViewController.m */; };
 		3F595B032297C83200AAA801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F595B012297C83200AAA801 /* Main.storyboard */; };
 		3F595B052297C83300AAA801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F595B042297C83300AAA801 /* Assets.xcassets */; };
 		3F595B082297C83300AAA801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F595B062297C83300AAA801 /* LaunchScreen.storyboard */; };
 		3F595B0B2297C83300AAA801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F595B0A2297C83300AAA801 /* main.m */; };
+		3FCDFE42229D0EA2003D617F /* DisplayLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCDFE41229D0EA2003D617F /* DisplayLinkViewController.m */; };
+		3FCDFE45229D1466003D617F /* GCDTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FCDFE44229D1466003D617F /* GCDTimerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F595AF82297C83200AAA801 /* 定时器的使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "定时器的使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F595AFB2297C83200AAA801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F595AFC2297C83200AAA801 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3F595AFE2297C83200AAA801 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3F595AFF2297C83200AAA801 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F595AFE2297C83200AAA801 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		3F595AFF2297C83200AAA801 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		3F595B022297C83200AAA801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F595B042297C83300AAA801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F595B072297C83300AAA801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F595B092297C83300AAA801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F595B0A2297C83300AAA801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FCDFE40229D0EA2003D617F /* DisplayLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayLinkViewController.h; sourceTree = "<group>"; };
+		3FCDFE41229D0EA2003D617F /* DisplayLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayLinkViewController.m; sourceTree = "<group>"; };
+		3FCDFE43229D1466003D617F /* GCDTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimerViewController.h; sourceTree = "<group>"; };
+		3FCDFE44229D1466003D617F /* GCDTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +66,17 @@
 			children = (
 				3F595AFB2297C83200AAA801 /* AppDelegate.h */,
 				3F595AFC2297C83200AAA801 /* AppDelegate.m */,
-				3F595AFE2297C83200AAA801 /* ViewController.h */,
-				3F595AFF2297C83200AAA801 /* ViewController.m */,
+				3F595AFE2297C83200AAA801 /* TimerViewController.h */,
+				3F595AFF2297C83200AAA801 /* TimerViewController.m */,
 				3F595B012297C83200AAA801 /* Main.storyboard */,
 				3F595B042297C83300AAA801 /* Assets.xcassets */,
 				3F595B062297C83300AAA801 /* LaunchScreen.storyboard */,
 				3F595B092297C83300AAA801 /* Info.plist */,
 				3F595B0A2297C83300AAA801 /* main.m */,
+				3FCDFE40229D0EA2003D617F /* DisplayLinkViewController.h */,
+				3FCDFE41229D0EA2003D617F /* DisplayLinkViewController.m */,
+				3FCDFE43229D1466003D617F /* GCDTimerViewController.h */,
+				3FCDFE44229D1466003D617F /* GCDTimerViewController.m */,
 			);
 			path = "定时器的使用";
 			sourceTree = "<group>";
@@ -141,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F595B002297C83200AAA801 /* ViewController.m in Sources */,
+				3F595B002297C83200AAA801 /* TimerViewController.m in Sources */,
+				3FCDFE42229D0EA2003D617F /* DisplayLinkViewController.m in Sources */,
 				3F595B0B2297C83300AAA801 /* main.m in Sources */,
+				3FCDFE45229D1466003D617F /* GCDTimerViewController.m in Sources */,
 				3F595AFD2297C83200AAA801 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

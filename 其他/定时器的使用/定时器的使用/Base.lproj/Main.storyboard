@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iLT-eu-Km8">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Timer View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TimerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,10 +49,42 @@
             </objects>
             <point key="canvasLocation" x="-301" y="128"/>
         </scene>
-        <!--View Controller-->
+        <!--Timer View Controller-->
+        <scene sceneID="xd6-J3-NeT">
+            <objects>
+                <viewController id="iLT-eu-Km8" customClass="GCDTimerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOI-Vl-B7O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc1-vM-cRv">
+                                <rect key="frame" x="348" y="56" width="30" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTimeClick:" destination="iLT-eu-Km8" eventType="touchUpInside" id="Yxa-HE-7R7"/>
+                                    <action selector="btnTimeClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cj1-T8-6yR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.09181410726" green="0.99290345420000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="YhK-FD-US4"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnTime" destination="tc1-vM-cRv" id="co7-VY-oZU"/>
+                        <segue destination="6s5-jL-jWM" kind="show" identifier="cba" id="iEL-ro-NU4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mI9-Gq-qYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="875"/>
+        </scene>
+        <!--Display Link View Controller-->
         <scene sceneID="6qU-eu-xnh">
             <objects>
-                <viewController id="6s5-jL-jWM" sceneMemberID="viewController">
+                <viewController id="6s5-jL-jWM" customClass="DisplayLinkViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cZD-Ls-Cbs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,4 +97,7 @@
             <point key="canvasLocation" x="616" y="123"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="iEL-ro-NU4"/>
+    </inferredMetricsTieBreakers>
 </document>

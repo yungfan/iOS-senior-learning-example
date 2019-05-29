@@ -6,9 +6,9 @@
 //  Copyright © 2019 student. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TimerViewController.h"
 
-@interface ViewController ()
+@interface TimerViewController ()
 
 @property (nonatomic, strong) NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UIButton *btnTime;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation ViewController
+@implementation TimerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
