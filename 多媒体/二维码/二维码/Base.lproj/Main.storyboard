@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入二维码的内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ofV-Df-t0z">
+                                <rect key="frame" x="20" y="173" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9i-Hf-25M">
+                                <rect key="frame" x="168.5" y="233" width="77" height="30"/>
+                                <state key="normal" title="生成二维码"/>
+                                <connections>
+                                    <action selector="createQR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wax-KW-V5u"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5B8-xu-YfM">
+                                <rect key="frame" x="87" y="293" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Hag-qV-vs0"/>
+                                    <constraint firstAttribute="width" constant="240" id="v1z-dH-cnV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i9i-Hf-25M" firstAttribute="top" secondItem="ofV-Df-t0z" secondAttribute="bottom" constant="30" id="1sY-KN-gjf"/>
+                            <constraint firstItem="5B8-xu-YfM" firstAttribute="top" secondItem="i9i-Hf-25M" secondAttribute="bottom" constant="30" id="319-dt-O0Z"/>
+                            <constraint firstItem="i9i-Hf-25M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="32m-Nc-mxl"/>
+                            <constraint firstItem="i9i-Hf-25M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FBf-e7-q3m"/>
+                            <constraint firstItem="ofV-Df-t0z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ICa-jW-1tw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ofV-Df-t0z" secondAttribute="trailing" constant="20" id="pyk-bO-Hfc"/>
+                            <constraint firstItem="5B8-xu-YfM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="suf-ba-AcR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="content" destination="ofV-Df-t0z" id="sOa-yk-g0G"/>
+                        <outlet property="qrImage" destination="5B8-xu-YfM" id="3v1-NM-Vr5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.33333333333334" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>
