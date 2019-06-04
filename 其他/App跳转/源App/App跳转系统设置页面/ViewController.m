@@ -40,7 +40,7 @@
         
     }
     
-    //3.iOS9以后需要设置白名单，如果使用 canOpenURL:方法，该方法所涉及到的 URL Schemes 必须在"Info.plist"中将它们列为白名单，否则不能使用。key叫做LSApplicationQueriesSchemes ，键值内容是对应应用程序的URL Schemes。
+    //3.iOS9以后需要设置白名单，如果使用 canOpenURL:方法，该方法所涉及到的 URL Schemes 必须在"Info.plist"中将它们列为白名单，否则不能使用。key叫做LSApplicationQueriesSchemes ，键值内容是对应应用程序的URL Schemes。不论跳转到App还是具体的界面（app://或者app://abc），只需要设置一次
     
     
 }

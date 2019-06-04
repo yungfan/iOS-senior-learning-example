@@ -20,10 +20,10 @@
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    
     // 拿到当前App的第一个界面
-    UIViewController *main = application.keyWindow.rootViewController;
+    UIViewController *main = app.keyWindow.rootViewController;
     
     // 根据字符串关键字来跳转到不同页面
     if ([url.absoluteString containsString:@"VC1"]) { // 跳转到应用App-B的Page1页面
@@ -33,5 +33,6 @@
     
     return YES;
 }
+
 
 @end

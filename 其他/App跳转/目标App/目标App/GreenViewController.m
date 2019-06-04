@@ -30,7 +30,7 @@
     
     // 2.判断手机中是否安装了对应程序
     if ([[UIApplication sharedApplication] canOpenURL:appUrl]) {
-        // 3. 打开应用程序App-B
+        // 3. 打开应用程序App-A
         [[UIApplication sharedApplication] openURL:appUrl options:@{} completionHandler:nil];
         
     } else {

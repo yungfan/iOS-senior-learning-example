@@ -58,10 +58,11 @@
 
     
     //2. iOS10只允许如下方式跳转到设置里自己app的界面，对跳转到其他界面做了限制：
-//    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString] options:@{} completionHandler:nil];
+
+  
     
-    
-    
+
 
 }
 
