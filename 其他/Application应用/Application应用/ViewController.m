@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <MessageUI/MessageUI.h>
+#import <WebKit/WebKit.h>
 
 @interface ViewController () <MFMessageComposeViewControllerDelegate>
 - (IBAction)phone:(id)sender;
@@ -15,7 +16,7 @@
 - (IBAction)email:(id)sender;
 - (IBAction)pdf:(id)sender;
 
-@property (nonatomic,strong) UIWebView *webview;
+@property (nonatomic,strong) WKWebView *webview;
 
 @property (nonatomic,strong) MFMessageComposeViewController *vc;
 
@@ -47,7 +48,7 @@
     
     //方式2 WebView方式 创建一个UIWebView来加载URL，拨完后能自动回到原应用 这个webView千万不要添加到界面上来，不然会挡住其他界面
     
-   self.webview = [[UIWebView alloc] initWithFrame:CGRectZero];
+   self.webview = [[WKWebView alloc] initWithFrame:CGRectZero];
 
    [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"tel://10000"]]];
 }
@@ -120,15 +121,19 @@
 
 - (IBAction)pdf:(id)sender {
     
-    self.webview = [[UIWebView alloc]initWithFrame:self.view.frame];
+    self.webview = [[WKWebView alloc]initWithFrame:self.view.frame];
     
     [self.view addSubview:self.webview];
     
-    [self loadDocument:@"bb.docx" inView:self.webview];
+    //[self loadDocument:@"aa.pdf" inView:self.webview];
+    
+    //[self loadDocument:@"bb.docx" inView:self.webview];
+    
+    [self loadDocument:@"cc.pptx" inView:self.webview];
 }
 
 
--(void)loadDocument:(NSString *)documentName inView:(UIWebView *)webView{
+-(void)loadDocument:(NSString *)documentName inView:(WKWebView *)webView{
     
     NSString *path = [[NSBundle mainBundle] pathForResource:documentName ofType:nil];
     
