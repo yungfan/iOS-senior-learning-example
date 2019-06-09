@@ -211,6 +211,11 @@
 					3FAD0E4420D0BB4A00AAF67E = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					3FAD0E5D20D0BB4A00AAF67E = {
 						CreatedOnToolsVersion = 8.3;
@@ -517,6 +522,7 @@
 				3FAD0E7420D0BB4A00AAF67E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FAD0E7520D0BB4A00AAF67E /* Build configuration list for PBXNativeTarget "iOS 10 本地通知Tests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				3FAD0E7720D0BB4A00AAF67E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FAD0E7820D0BB4A00AAF67E /* Build configuration list for PBXNativeTarget "iOS 10 本地通知UITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +540,7 @@
 				3FAD0E7A20D0BB4A00AAF67E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

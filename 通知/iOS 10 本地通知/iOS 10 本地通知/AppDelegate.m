@@ -34,11 +34,12 @@
         }
         
     }];
-   
     
     
     
+    //设置代理，后面有两个代理方法需要使用
     center.delegate = self;
+    
     //如果程序被杀死了 会调用该方法
     if (launchOptions[UIApplicationLaunchOptionsLocalNotificationKey]) { // 如果这个key有值,代表是杀死的程序接收到本地通知跳转
         
@@ -52,8 +53,8 @@
         
         NSLog(@"跳转到指定页面");
     }
-
-
+    
+    
     return YES;
 }
 
@@ -86,11 +87,11 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-//接收到通知，如果处于后台，该方法不会调用
+//接收到通知，如果处于后台，该方法不会调用（默认情况下，App处于前台，收到通知不会有任何提醒，必须在completionHandler中设置提醒的方式）
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
     
     NSLog(@"%s 收到通知",__func__);
-
+    
     UNNotificationContent *content = notification.request.content; // 收到推送的消息内容
     NSNumber *badge = content.badge;  // 推送消息的角标
     NSString *body = content.body;    // 推送消息体
@@ -98,7 +99,7 @@
     NSString *subtitle = content.subtitle;  // 推送消息的副标题
     NSString *title = content.title;  // 推送消息的标题
     
-    NSLog(@"iOS10 收到本地通知:{%s,\\\\nbody:%@，\\\\ntitle:%@,\\\\nsubtitle:%@,\\\\nbadge：%@，\\\\nsound：%@\\\\n}",__func__,body,title,subtitle,badge,sound);
+    NSLog(@"iOS10 收到本地通知:{%s, body:%@， title:%@, subtitle:%@, badge：%@，sound：%@}",__func__,body,title,subtitle,badge,sound);
     
     completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound|UNNotificationPresentationOptionAlert); // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以设置
     
@@ -106,7 +107,7 @@
 
 
 //通知的点击事件，前后台都会调用该方法
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler{
     
     
     NSLog(@"%s 点击通知",__func__);
@@ -118,10 +119,10 @@
     NSString *subtitle = content.subtitle;  // 推送消息的副标题
     NSString *title = content.title;  // 推送消息的标题
     
-    NSLog(@"iOS10 收到本地通知:{%s,\\\\nbody:%@，\\\\ntitle:%@,\\\\nsubtitle:%@,\\\\nbadge：%@，\\\\nsound：%@\\\\n}",__func__,body,title,subtitle,badge,sound);
-
+    NSLog(@"iOS10 收到本地通知:{%s, body:%@， title:%@, subtitle:%@, badge：%@，sound：%@}",__func__,body,title,subtitle,badge,sound);
     
-
+    
+    
     //处理交互
     NSString *categoryIdentifier = response.notification.request.content.categoryIdentifier;
     
