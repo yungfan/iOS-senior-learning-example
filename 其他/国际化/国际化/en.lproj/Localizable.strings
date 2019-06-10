@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  国际化
+
+  Created by student on 2019/6/6.
+  Copyright © 2019 student. All rights reserved.
+*/
+"loginBtnTitle" = "Login";//等号左边为代码中需要调用的key，右边为对应的中文文本value。

@@ -1,0 +1,9 @@
+
+/* Class = "UITextField"; placeholder = "请输入密码"; ObjectID = "2yc-uz-vBn"; */
+"2yc-uz-vBn.placeholder" = "please input your password";
+
+/* Class = "UILabel"; text = "登录界面"; ObjectID = "eCB-JQ-nq2"; */
+"eCB-JQ-nq2.text" = "Login";
+
+/* Class = "UITextField"; placeholder = "请输入用户名"; ObjectID = "sOO-y4-J6Q"; */
+"sOO-y4-J6Q.placeholder" = "please input your name";
