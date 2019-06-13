@@ -31,14 +31,14 @@
         //后台定位
         
         //第一种方法：调用requestWhenInUseAuthorization &&  _manager.allowsBackgroundLocationUpdates = YES; && 打开后胎定位的开关  ==> 结果是 能后台定位但是会有个大蓝条
-        _manager.allowsBackgroundLocationUpdates = YES;
+        //_manager.allowsBackgroundLocationUpdates = YES;
         //
-        [_manager requestWhenInUseAuthorization];
+        //[_manager requestWhenInUseAuthorization];
         
         
         
         //第二种方法：调用requestAlwaysAuthorization即可 ==> 结果是 能后台定位 并且不会出现大蓝条
-        //[_manager requestAlwaysAuthorization];
+        [_manager requestAlwaysAuthorization];
 
 
         

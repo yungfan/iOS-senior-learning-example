@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CD55C472296DBB3000DCB55 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD55C462296DBB2000DCB55 /* CoreLocation.framework */; };
 		3FEE8C86225C7E6B00C1A5AD /* abc.edu.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3FEE8C85225C7E6B00C1A5AD /* abc.edu.gpx */; };
 		AE6769EE1E975C0500B0D303 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6769ED1E975C0500B0D303 /* main.m */; };
 		AE6769F11E975C0500B0D303 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6769F01E975C0500B0D303 /* AppDelegate.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CD55C462296DBB2000DCB55 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3FEE8C85225C7E6B00C1A5AD /* abc.edu.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = abc.edu.gpx; sourceTree = "<group>"; };
 		AE6769E91E975C0500B0D303 /* 定位.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "定位.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6769ED1E975C0500B0D303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD55C472296DBB3000DCB55 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CD55C452296DBB2000DCB55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CD55C462296DBB2000DCB55 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE6769E01E975C0400B0D303 = {
 			isa = PBXGroup;
 			children = (
 				AE6769EB1E975C0500B0D303 /* 定位 */,
 				AE6769EA1E975C0500B0D303 /* Products */,
+				3CD55C452296DBB2000DCB55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +139,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

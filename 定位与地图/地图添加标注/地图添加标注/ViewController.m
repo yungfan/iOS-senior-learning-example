@@ -119,9 +119,6 @@
         
     }
     
-    NSLog(@"%s", __func__);
-    
-
     //设置棒棒糖的颜色
     annotationView.pinTintColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0];
     
@@ -152,6 +149,14 @@
     
     //让地图显示设置的区域
     [_map setRegion:region];
+    
+}
+
+//点击Annotation事件
+-(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
+    
+    
+    NSLog(@"%s", __func__);
     
 }
 
