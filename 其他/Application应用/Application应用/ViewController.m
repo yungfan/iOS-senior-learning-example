@@ -16,7 +16,7 @@
 - (IBAction)email:(id)sender;
 - (IBAction)pdf:(id)sender;
 
-@property (nonatomic,strong) WKWebView *webview;
+@property (nonatomic,strong) WKWebView *webView;
 
 @property (nonatomic,strong) MFMessageComposeViewController *vc;
 
@@ -48,9 +48,9 @@
     
     //方式2 WebView方式 创建一个UIWebView来加载URL，拨完后能自动回到原应用 这个webView千万不要添加到界面上来，不然会挡住其他界面
     
-   self.webview = [[WKWebView alloc] initWithFrame:CGRectZero];
+   self.webView = [[WKWebView alloc] initWithFrame:CGRectZero];
 
-   [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"tel://10000"]]];
+   [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"tel://10000"]]];
 }
 
 - (IBAction)message:(id)sender {
@@ -119,20 +119,25 @@
     
 }
 
+//WKWebView加载本地资源
 - (IBAction)pdf:(id)sender {
     
-    self.webview = [[WKWebView alloc]initWithFrame:self.view.frame];
+    self.webView = [[WKWebView alloc]initWithFrame:self.view.frame];
     
-    [self.view addSubview:self.webview];
+    [self.view addSubview:self.webView];
     
     //[self loadDocument:@"aa.pdf" inView:self.webview];
     
     //[self loadDocument:@"bb.docx" inView:self.webview];
     
-    [self loadDocument:@"cc.pptx" inView:self.webview];
+    //[self loadDocument:@"cc.pptx" inView:self.webview];
+    
+    //加载网络资源
+    [self loadDocumentFromServer];
 }
 
 
+//WKWebView加载网络资源
 -(void)loadDocument:(NSString *)documentName inView:(WKWebView *)webView{
     
     NSString *path = [[NSBundle mainBundle] pathForResource:documentName ofType:nil];
@@ -142,6 +147,17 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     [webView loadRequest:request];
+    
+}
+
+
+-(void)loadDocumentFromServer{
+    
+    NSURL *url = [NSURL URLWithString:@"http://172.20.53.250:8080/AppTestAPI/bb.docx"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [self.webView loadRequest:request];
     
 }
 
